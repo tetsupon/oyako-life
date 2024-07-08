@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'childrens/index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  
+  root to: "childrens#index"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
 end
