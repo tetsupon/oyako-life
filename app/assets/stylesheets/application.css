@@ -1,15 +1,113 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: pink;
+  color: white;
+  padding: 10px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+logo-title{
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+log-in{
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+sign-up{
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-top: 0;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: pink;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.features {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features .feature {
+  margin-bottom: 30px;
+}
+
+.features .feature h3 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: pink;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin-left: 20px;
+}
