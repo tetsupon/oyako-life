@@ -58,14 +58,30 @@ sign-up{
   margin-top: 0;
 }
 
-.hero .btn {
+.cute-button {
   display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  background-color: pink;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff69b4; /* 可愛いピンク色 */
+  border: none;
+  border-radius: 25px; /* 丸みを帯びたボタン */
   text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cute-button:hover {
+  background-color: #ff85c0; /* ホバー時の色 */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cute-button:active {
+  background-color: #ff69b4; /* クリック時の色 */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .features {
