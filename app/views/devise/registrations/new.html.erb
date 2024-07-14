@@ -2,38 +2,42 @@
 <div class="container">
   <h2>新規登録</h2>
   
-  <%= form_with(model: resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= form_with(model: resource, as: resource_name, url: registration_path(resource_name), local: true) do |f| %>
     <div class="field">
       <%= f.label :nickname, "ニックネーム" %><br>
       <%= f.text_field :nickname, autofocus: true %>
     </div>
 
-    <div class="field">
-      <%= f.label :last_name, "名字" %><br>
-      <%= f.text_field :last_name %>
+    <div class="field-group">
+      <div class="field short-field">
+        <%= f.label :family_name, "名字" %><br>
+        <%= f.text_field :family_name %>
+      </div>
+
+      <div class="field short-field">
+        <%= f.label :first_name, "名前" %><br>
+        <%= f.text_field :first_name %>
+      </div>
     </div>
 
-    <div class="field">
-      <%= f.label :first_name_kana, "名前" %><br>
-      <%= f.text_field :first_name_kana %>
+    <div class="field-group">
+      <div class="field short-field">
+        <%= f.label :family_name_kana, "名字（カナ）" %><br>
+        <%= f.text_field :family_name_kana %>
+      </div>
+
+      <div class="field short-field">
+        <%= f.label :first_name_kana, "名前（カナ）" %><br>
+        <%= f.text_field :first_name_kana %>
+      </div>
     </div>
 
-    <div class="field">
-      <%= f.label :last_name, "名字（カナ）" %><br>
-      <%= f.text_field :last_name %>
-    </div>
-
-    <div class="field">
-      <%= f.label :first_name_kana, "名前（カナ）" %><br>
-      <%= f.text_field :first_name_kana %>
-    </div>
-
-    <div class="field">
+    <div class="field short-field">
       <%= f.label :gender, "性別" %><br>
       <%= f.select :gender, [['男性', 'male'], ['女性', 'female']] %>
     </div>
 
-    <div class="field">
+    <div class="field short-field">
       <%= f.label :birthday, "生年月日" %><br>
       <%= f.date_select :birthday, start_year: 1900, end_year: Time.now.year %>
     </div>
