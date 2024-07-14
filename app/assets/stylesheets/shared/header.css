@@ -1,0 +1,75 @@
+header {
+  background-color: #ff69b4; /* 背景を可愛いピンクに */
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-link {
+  color: white;
+  text-decoration: none;
+  font-size: 48px;
+  font-family: 'Pacifico', cursive; /* 可愛い手書き風のフォント */
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  margin-left: auto; /* 右端に配置 */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 25px; /* 丸みを帯びたボタン風 */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #ff85c0; /* ホバー時の色 */
+  transform: translateY(-3px);
+}
+
+.nav-link.login {
+  background-color: #4caf50; /* ログインボタンの色 */
+}
+
+.nav-link.signup {
+  background-color: #ff6347; /* 新規登録ボタンの色 */
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
