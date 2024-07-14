@@ -10,12 +10,12 @@
   <header>
     <div class="container">
       <div class="logo">
-        <%= link_to '親子Life', root_path, style: "color: white; text-decoration: none; font-size: 48px;" %>
+        <%= link_to '親子Life', root_path, class: 'logo-link' %>
       </div>
       <nav>
-        <ul>
-          <li><%= link_to 'ログイン', "#", style: "color: white; text-decoration: none; font-size: 24px;" %></li>
-          <li><%= link_to '新規登録', "#", style: "color: white; text-decoration: none; font-size: 24px;" %></li>
+        <ul class="nav-links">
+          <li><%= link_to 'ログイン', "#", class: 'nav-link login' %></li>
+          <li><%= link_to '新規登録', "#", class: 'nav-link signup' %></li>
         </ul>
       </nav>
     </div>
@@ -45,7 +45,7 @@
         <div class="feature">
           <h3>健康管理</h3>
           <p>忘れやすい予防接種のスケジュール管理をすることができます。</p>
-          <p>健康診断の記録を残すことができ、診断結果の見直しや、次回の健康診断のスケージュール管理もできます。</p>
+          <p>健康診断の記録を残すことができ、診断結果の見直しや、次回の健康診断のスケジュール管理もできます。</p>
         </div>
         <div class="feature">
           <h3>食事管理</h3>

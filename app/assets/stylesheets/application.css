@@ -1,51 +1,85 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 header {
-  background-color: pink;
-  color: white;
-  padding: 10px 0;
+  background-color: #ff69b4; /* 背景を可愛いピンクに */
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-header nav ul {
+.logo-link {
+  color: white;
+  text-decoration: none;
+  font-size: 48px;
+  font-family: 'Pacifico', cursive; /* 可愛い手書き風のフォント */
+}
+
+.nav-links {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 15px;
+  margin-left: auto; /* 右端に配置 */
 }
 
-header nav ul li {
-  margin-left: 20px;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
 }
 
-logo-title{
+.nav-link {
   color: white;
-  font-size: 24px;
   text-decoration: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 25px; /* 丸みを帯びたボタン風 */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-log-in{
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
+.nav-link:hover {
+  background-color: #ff85c0; /* ホバー時の色 */
+  transform: translateY(-3px);
 }
 
-sign-up{
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
+.nav-link.login {
+  background-color: #4caf50; /* ログインボタンの色 */
+}
+
+.nav-link.signup {
+  background-color: #ff6347; /* 新規登録ボタンの色 */
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 
 .hero {
@@ -56,6 +90,7 @@ sign-up{
 
 .hero h1 {
   margin-top: 0;
+  font-family: 'Pacifico', cursive; /* 可愛い手書き風のフォント */
 }
 
 .cute-button {
@@ -85,26 +120,60 @@ sign-up{
 }
 
 .features {
-  background-color: #fff;
   padding: 50px 20px;
+  background-color: #fff;
+}
+
+.features h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.features .container {
-  max-width: 1200px;
-  margin: 0 auto;
+.feature {
+  margin-bottom: 40px; /* セクションの間隔を広げる */
+  text-align: center;
 }
 
-.features .feature {
-  margin-bottom: 30px;
+.feature h3 {
+  font-size: 24px;
+  color: #ff69b4;
 }
 
-.features .feature h3 {
-  margin-top: 0;
+.feature p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* レスポンシブデザイン */
+@media (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: left;
+  }
+
+  .feature h3 {
+    font-size: 28px;
+  }
+
+  .feature p {
+    font-size: 18px;
+  }
 }
 
 footer {
-  background-color: pink;
+  background-color: #ff69b4; /* フッターの背景色をピンクに */
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -128,3 +197,7 @@ footer ul li {
   margin-left: 20px;
 }
 
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
