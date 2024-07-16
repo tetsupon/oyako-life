@@ -16,7 +16,7 @@
 | gender              | string    | null: false               | 性別                     |
 
 ### Association
-- `has_many :children`
+- `has_many :childrens`
 
 ### 2. 育児記録機能
 
