@@ -49,17 +49,17 @@ header {
 }
 
 .nav-link.signup {
-  background-color: #ff6347; /* 新規登録ボタンの色 */
+  background-color: #ff6347; /* ログアウトボタンの色 */
 }
-
 
 
 .user-nickname {
+  color: white;
   text-decoration: none;
-  margin-right: 3vw;
-  color: #333333;
-  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Pacifico', cursive; /* 可愛い手書き風のフォント */
 }
+
 
 
 .nav-link.logout {
