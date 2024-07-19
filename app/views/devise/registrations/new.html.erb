@@ -8,6 +8,21 @@
 
   <%= render 'shared/error_messages', model: f.object %>
 
+      <div class="field">
+      <%= f.label :email %><br>
+      <%= f.email_field :email, autocomplete: "email" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password %><br>
+      <%= f.password_field :password, autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password_confirmation %><br>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    </div>
+
     <div class="field">
       <%= f.label :nickname, "ニックネーム" %><br>
       <%= f.text_field :nickname, autofocus: true %>
@@ -45,21 +60,6 @@
     <div class="field short-field">
       <%= f.label :birth_day, "生年月日" %><br>
       <%= f.date_select :birth_day, start_year: 1900, end_year: Time.now.year %>
-    </div>
-
-    <div class="field">
-      <%= f.label :email %><br>
-      <%= f.email_field :email, autocomplete: "email" %>
-    </div>
-
-    <div class="field">
-      <%= f.label :password %><br>
-      <%= f.password_field :password, autocomplete: "new-password" %>
-    </div>
-
-    <div class="field">
-      <%= f.label :password_confirmation %><br>
-      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
     </div>
 
     <div class="actions">
