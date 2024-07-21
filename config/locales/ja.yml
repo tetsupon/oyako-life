@@ -1,0 +1,32 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+    attributes:
+      user:
+        nickname: ニックネーム
+        email: Eメール
+        password: パスワード
+        password_confirmation: パスワード（確認用）
+        family_name: 名字
+        first_name: 名前
+        family_name_kana: 名字（カナ）
+        first_name_kana: 名前（カナ）
+        gender: 性別
+        birth_day: 生年月日
+  errors:
+    messages:
+      blank: "を入力してください"
+      taken: "はすでに存在します"
+      invalid: "は有効でありません"
+      too_short: "は%{count}文字以上で入力してください"
+      not_a_number: "は数値で入力してください"
+      inclusion: "は一覧にありません"
+      confirmation: "とパスワード（確認用）が一致しません"
+      # カスタムエラーメッセージ
+      invalid_password: "は英数字混合で入力してください"
+  devise:
+    failure:
+      user:
+        invalid: "メールアドレスまたはパスワードが正しくありません。"
+

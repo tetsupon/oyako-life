@@ -1,6 +1,6 @@
 /* ヘッダーのスタイル */
 header {
-  background-color: #ff69b4; /* 背景を可愛いピンクに */
+  background-color: #ffe4e1; /* 背景を可愛いピンクに */
   padding: 20px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -15,7 +15,7 @@ header {
 }
 
 .logo-link {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 48px;
   font-family: 'Pacifico', cursive; /* 可愛い手書き風のフォント */
@@ -39,22 +39,21 @@ header {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.nav-link.login {
+  background-color: #ff69b4; /* ログインボタンの色 */
+}
+
+.nav-link.signup {
+  background-color: #ff69b4; /* 新規登録ボタンの色 */
+}
+
 .nav-link:hover {
   background-color: #ff85c0; /* ホバー時の色 */
   transform: translateY(-3px);
 }
 
-.nav-link.login {
-  background-color: #4caf50; /* ログインボタンの色 */
-}
-
-.nav-link.signup {
-  background-color: #ff6347; /* ログアウトボタンの色 */
-}
-
-
 .user-nickname {
-  color: #6ec1e4; /* 薄いブルー */
+  color: white; /* 白 */
   font-size: 24px; /* 文字サイズ */
   font-family: 'Pacifico', cursive; /* 手書き風のフォント */
   text-decoration: none; /* 下線を消す */
@@ -65,12 +64,12 @@ header {
 }
 
 .user-nickname:hover {
-  background-color: #91d5f0; /* ホバー時の背景色 */
+  background-color: #ff85c0; /* ホバー時の背景色 */
   transform: translateY(-3px); /* ホバー時の位置調整 */
 }
 
 .user-nickname:active {
-  background-color: #6ec1e4; /* クリック時の背景色 */
+  background-color: #ff85c0; /* クリック時の背景色 */
   transform: translateY(0); /* クリック時の位置調整 */
 }
 
@@ -87,14 +86,14 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* クリック時の影を弱く */
 }
 
-
-
 .nav-link.logout {
-  background-color: #4caf50; /* ログインボタンの色 */
-
+  background-color: #ff69b4; /* ログアウトボタンの色 */
 }
 
-
+.nav-link.logout:hover {
+  background-color: #ff85c0; /* ホバー時の色 */
+  transform: translateY(-3px);
+}
 
 @media (max-width: 768px) {
   .header-container {
