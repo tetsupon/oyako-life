@@ -59,7 +59,7 @@
 
     <div class="field short-field">
       <%= f.label :birth_day, "生年月日" %><br>
-      <%= f.date_select :birth_day, start_year: 1900, end_year: Time.now.year %>
+      <%= f.date_select :birth_day, start_year: 1900, end_year: Time.now.year, prompt: { year: '年', month: '月', day: '日' } %>
     </div>
 
     <div class="actions">
