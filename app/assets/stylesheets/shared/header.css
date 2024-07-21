@@ -54,10 +54,37 @@ header {
 
 
 .user-nickname {
-  color: white;
-  text-decoration: none;
-  font-size: 48px;
-  font-family: 'Pacifico', cursive; /* 可愛い手書き風のフォント */
+  color: #6ec1e4; /* 薄いブルー */
+  font-size: 24px; /* 文字サイズ */
+  font-family: 'Pacifico', cursive; /* 手書き風のフォント */
+  text-decoration: none; /* 下線を消す */
+  padding: 10px 20px; /* パディング */
+  border-radius: 25px; /* 丸みを帯びたボーダー */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* ホバー効果のトランジション */
+  display: inline-block; /* インラインブロック表示 */
+}
+
+.user-nickname:hover {
+  background-color: #91d5f0; /* ホバー時の背景色 */
+  transform: translateY(-3px); /* ホバー時の位置調整 */
+}
+
+.user-nickname:active {
+  background-color: #6ec1e4; /* クリック時の背景色 */
+  transform: translateY(0); /* クリック時の位置調整 */
+}
+
+.cute-button {
+  font-weight: bold; /* 太字 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+}
+
+.cute-button:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* ホバー時の影を強化 */
+}
+
+.cute-button:active {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* クリック時の影を弱く */
 }
 
 
