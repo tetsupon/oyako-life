@@ -1,0 +1,52 @@
+/* 新規登録画面のエラーメッセージ */
+.error-alert {
+  background-color: #ffdddd; /* 薄いピンク背景 */
+  color: #d8000c; /* 赤いテキスト */
+  border: 1px solid #d8000c; /* 赤いボーダー */
+  border-radius: 10px; /* 角を丸く */
+  padding: 20px; /* 内側の余白 */
+  margin-bottom: 20px; /* 下の余白 */
+  font-family: 'Arial', sans-serif; /* フォント設定 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+}
+
+.error-alert ul {
+  list-style-type: none; /* 箇条書きマーカーを無効化 */
+  padding-left: 0; /* 左の余白を無効化 */
+}
+
+.error-alert li {
+  margin-bottom: 10px; /* 各エラーメッセージの下に余白 */
+}
+
+.error-message {
+  font-size: 16px; /* フォントサイズ */
+  font-weight: bold; /* 太字 */
+}
+
+
+
+
+ /* ログイン画面のエラーメッセージ */
+.flash-notice, .flash-alert {
+  background-color: #ffdddd; /* 薄いピンク背景 */
+  color: #d8000c; /* 赤いテキスト */
+  border: 1px solid #d8000c; /* 赤いボーダー */
+  border-radius: 10px; /* 角を丸く */
+  padding: 20px; /* 内側の余白 */
+  margin-bottom: 20px; /* 下の余白 */
+  font-family: 'Arial', sans-serif; /* フォント設定 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+}
+
+.flash-notice {
+  background-color: #ddffdd; /* 薄い緑背景 */
+  color: #008000; /* 緑のテキスト */
+  border-color: #008000; /* 緑のボーダー */
+}
+
+.flash-alert {
+  background-color: #ffdddd; /* 薄いピンク背景 */
+  color: #d8000c; /* 赤いテキスト */
+  border-color: #d8000c; /* 赤いボーダー */
+}
