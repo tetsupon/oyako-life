@@ -1,10 +1,14 @@
+/* ヘッダーのスタイル */
 header {
   background-color: #ff69b4; /* 背景を可愛いピンクに */
   padding: 20px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.container {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -26,14 +30,6 @@ header {
   margin-left: auto; /* 右端に配置 */
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 15px;
-}
-
 .nav-link {
   color: white;
   text-decoration: none;
@@ -53,16 +49,60 @@ nav ul {
 }
 
 .nav-link.signup {
-  background-color: #ff6347; /* 新規登録ボタンの色 */
+  background-color: #ff6347; /* ログアウトボタンの色 */
 }
 
+
+.user-nickname {
+  color: #6ec1e4; /* 薄いブルー */
+  font-size: 24px; /* 文字サイズ */
+  font-family: 'Pacifico', cursive; /* 手書き風のフォント */
+  text-decoration: none; /* 下線を消す */
+  padding: 10px 20px; /* パディング */
+  border-radius: 25px; /* 丸みを帯びたボーダー */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* ホバー効果のトランジション */
+  display: inline-block; /* インラインブロック表示 */
+}
+
+.user-nickname:hover {
+  background-color: #91d5f0; /* ホバー時の背景色 */
+  transform: translateY(-3px); /* ホバー時の位置調整 */
+}
+
+.user-nickname:active {
+  background-color: #6ec1e4; /* クリック時の背景色 */
+  transform: translateY(0); /* クリック時の位置調整 */
+}
+
+.cute-button {
+  font-weight: bold; /* 太字 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+}
+
+.cute-button:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* ホバー時の影を強化 */
+}
+
+.cute-button:active {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* クリック時の影を弱く */
+}
+
+
+
+.nav-link.logout {
+  background-color: #4caf50; /* ログインボタンの色 */
+
+}
+
+
+
 @media (max-width: 768px) {
-  .container {
+  .header-container {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  nav ul {
+  .nav-links {
     flex-direction: column;
     width: 100%;
   }

@@ -1,0 +1,98 @@
+/* 全体の設定 */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe4e1; /* 背景を淡いピンクに */
+  color: #333;
+}
+
+.devise-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #ff69b4; /* ピンク色 */
+  font-family: 'Pacifico', cursive; /* 手書き風のフォント */
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #ff69b4; /* ピンク色 */
+}
+
+.field input[type="email"],
+.field input[type="password"],
+.field input[type="text"],
+.field input[type="date"],
+.field select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* 丸みを帯びた入力フィールド */
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.field input[type="email"]:focus,
+.field input[type="password"]:focus,
+.field input[type="text"]:focus,
+.field input[type="date"]:focus,
+.field select:focus {
+  border-color: #ff69b4; /* フォーカス時の色 */
+}
+
+.field.short-field {
+  width: calc(50% - 7.5px); /* 幅を半分に調整 */
+}
+
+.field-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.field.date-field {
+  width: 100%; /* 年・月・日の入力フィールドを全幅に設定 */
+}
+
+.actions {
+  text-align: center;
+}
+
+.actions input[type="submit"] {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff69b4; /* ピンク色 */
+  border: none;
+  border-radius: 25px; /* 丸みを帯びたボタン */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.actions input[type="submit"]:hover {
+  background-color: #ff85c0; /* ホバー時の色 */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions input[type="submit"]:active {
+  background-color: #ff69b4; /* クリック時の色 */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

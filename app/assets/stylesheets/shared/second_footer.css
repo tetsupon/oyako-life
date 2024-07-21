@@ -1,0 +1,33 @@
+.second-footer {
+  background-color: #ff69b4; /* フッターの背景色をピンクに */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.second-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.second-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.second-footer ul li {
+  margin-left: 20px;
+}
+
+.second-footer ul li a {
+  color: white;
+  text-decoration: none;
+}

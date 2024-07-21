@@ -1,0 +1,32 @@
+
+<div class="devise-container">
+  <h2>ログイン</h2>
+  
+  <%= form_with model: @user, url: user_session_path, class: 'registration-main', local: true do |f| %>
+
+    <% if flash[:notice].present? %>
+      <div class="flash-notice"><%= flash[:notice] %></div>
+    <% end %>
+    <% if flash[:alert].present? %>
+      <div class="flash-alert"><%= flash[:alert] %></div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :email %><br>
+      <%= f.email_field :email, id:"email", placeholder:"PC・携帯どちらでも可", autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password %><br>
+      <%= f.password_field :password, id:"password", placeholder:"" %>
+    </div>
+
+
+    <div class="actions">
+      <%= f.submit "ログイン" %>
+    </div>
+  <% end %>
+
+</div>
+
+
