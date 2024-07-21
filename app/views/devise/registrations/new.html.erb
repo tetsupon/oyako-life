@@ -54,7 +54,7 @@
 
     <div class="field short-field">
       <%= f.label :gender, "性別" %><br>
-      <%= f.select :gender, [['男性', 'male'], ['女性', 'female']] %>
+      <%= f.select :gender, [['設定なし', ''], ['男性', 'male'], ['女性', 'female']], { include_blank: true } %>
     </div>
 
     <div class="field short-field">
