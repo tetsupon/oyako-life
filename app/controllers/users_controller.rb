@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  
   before_action :authenticate_user!
   before_action :set_user, only: [:show, :edit, :update]
 
@@ -9,6 +10,11 @@ class UsersController < ApplicationController
   end
 
   def update
+    if params[:user][:password].blank? && params[:user][:password_confirmation].blank?
+      params[:user].delete(:password)
+      params[:user].delete(:password_confirmation)
+    end
+    
 
     @user = current_user
     if @user.update_with_password(user_params)
