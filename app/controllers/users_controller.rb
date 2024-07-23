@@ -9,10 +9,13 @@ class UsersController < ApplicationController
   end
 
   def update
-    if @user.update(user_params)
-      redirect_to @user, notice: 'ユーザー情報が更新されました。'
+
+    @user = current_user
+    if @user.update_with_password(user_params)
+      bypass_sign_in(@user)
+      redirect_to root_path(@user), notice: 'アカウント情報を更新しました。'
     else
-      render :edit
+      render :edit, status: :unprocessable_entity
     end
   end
 
