@@ -1,98 +1,61 @@
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-
-
-.hero {
-  background-color: #f9f9f9;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  margin-top: 0;
-  font-family: 'Pacifico', cursive; /* 可愛い手書き風のフォント */
-}
-.cute-button {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #ff69b4; /* 可愛いピンク色 */
-  border: none;
-  border-radius: 25px; /* 丸みを帯びたボタン */
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.cute-button:hover {
-  background-color: #ff85c0; /* ホバー時の色 */
-  transform: translateY(-3px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-}
-
-.cute-button:active {
-  background-color: #ff69b4; /* クリック時の色 */
-  transform: translateY(0);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.features {
-  padding: 50px 20px;
+.children-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.features h2 {
-  font-size: 30px;
+h1 {
+  text-align: center;
   color: #333;
-  margin-bottom: 30px;
-  text-align: center;
 }
 
-.feature {
-  margin-bottom: 40px; /* セクションの間隔を広げる */
+.add-child-button {
+  display: block;
+  width: 150px;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background-color: #ff69b4;
+  color: white;
   text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
-.feature h3 {
-  font-size: 24px;
+.add-child-button:hover {
+  background-color: #ff85c0;
+}
+
+.child-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.child-table th,
+.child-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.child-table th {
+  background-color: #f2f2f2;
+}
+
+.child-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.details-link {
   color: #ff69b4;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.feature p {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.5;
-  margin: 10px 0;
-}
-
-/* レスポンシブデザイン */
-@media (min-width: 768px) {
-  .features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .feature {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto 40px;
-    text-align: left;
-  }
-
-  .feature h3 {
-    font-size: 28px;
-  }
-
-  .feature p {
-    font-size: 18px;
-  }
+.details-link:hover {
+  color: #ff85c0;
 }
