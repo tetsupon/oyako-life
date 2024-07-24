@@ -1,26 +1,36 @@
-  <div class="children-container">
-    <h1>子供一覧</h1>
+<div class="children-container">
+  <h1>子供一覧</h1>
 
-    <% if user_signed_in? %>
-      <%= link_to '子供追加', new_child_path, class: 'btn btn-primary add-child-button' %>
-    <% end %>
+  <% if user_signed_in? %>
+    <%= link_to '子供追加', new_child_path, class: 'btn btn-primary add-child-button' %>
+  <% end %>
 
-    <table class="child-table">
-      <thead>
+  <table class="child-table">
+    <thead>
+      <tr>
+        <th>ニックネーム</th>
+        <th>名字</th>
+        <th>名前</th>
+        <th>名字（カナ）</th>
+        <th>名前（カナ）</th>
+        <th>生年月日</th>
+        <th>性別</th>
+        <th>詳細</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @children.each do |child| %>
         <tr>
-          <th>名前</th>
-          <th>年齢</th>
-          <th>詳細</th>
+          <td><%= child.nickname %></td>
+          <td><%= child.family_name %></td>
+          <td><%= child.first_name %></td>
+          <td><%= child.family_name_kana %></td>
+          <td><%= child.first_name_kana %></td>
+          <td><%= child.birth_day %></td>
+          <td><%= child.gender %></td>
+          <td><%= link_to '詳細', child_path(child), class: 'details-link' %></td>
         </tr>
-      </thead>
-      <tbody>
-        <% @children.each do |child| %>
-          <tr>
-            <td><%= child.name %></td>
-            <td><%= child.age %></td>
-            <td><%= link_to '詳細', child_path(child), class: 'details-link' %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-  </div>
+      <% end %>
+    </tbody>
+  </table>
+</div>
