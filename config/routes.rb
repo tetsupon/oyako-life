@@ -3,5 +3,4 @@ Rails.application.routes.draw do
   resources :children
   root to: "home#index"
   resources :users, only: [:edit, :update]
-
 end
