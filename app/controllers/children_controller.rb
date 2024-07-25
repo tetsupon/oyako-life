@@ -6,7 +6,7 @@ class ChildrenController < ApplicationController
   end
 
   def new
-    @child = current_user.children.build
+    @child = Child.new
   end
 
   def create
