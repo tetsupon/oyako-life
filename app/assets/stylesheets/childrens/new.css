@@ -15,18 +15,6 @@
   text-align: center;
 }
 
-.actions input[type="submit"] {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.actions input[type="submit"]:hover {
-  background-color: #45a049;
-}
 
 .field-group {
   display: flex;
