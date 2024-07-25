@@ -20,4 +20,16 @@ class Child < ApplicationRecord
     validates :birth_day
     
   end
+
+  def gender_jp
+    case gender
+    when 'male'
+      '男'
+    when 'female'
+      '女'
+    else
+      '不明'
+    end
+  end
+  
 end
