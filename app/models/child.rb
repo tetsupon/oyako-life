@@ -31,5 +31,9 @@ class Child < ApplicationRecord
       '不明'
     end
   end
-  
+
+  # 生年月日をフォーマットするメソッド
+  def formatted_birth_day
+    birth_day.strftime("%Y年%m月%d日") if birth_day.present?
+  end
 end
