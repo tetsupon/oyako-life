@@ -14,7 +14,7 @@ class ChildrenController < ApplicationController
     if @child.save
       redirect_to children_path, notice: '子供情報が登録されました。'
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
