@@ -1,0 +1,84 @@
+.children-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.actions {
+  text-align: center;
+}
+
+.actions input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.field-group {
+  display: flex;
+  gap: 20px; /* フィールド間のスペースを調整 */
+}
+
+.field-group .field {
+  flex: 1; /* 各フィールドが等しい幅を取るようにする */
+}
+
+.field-group .field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.field-group .field input[type="text"],
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="password"],
+.field select {
+  width: 100%; /* 入力フィールドの幅を調整 */
+  padding: 10px 20px; /* 内側の余白を追加 */
+  border: 2px solid #ff85c0; /* ピンクの枠線 */
+  border-radius: 25px; /* 丸い枠にする */
+  box-sizing: border-box; /* ボックスのサイズを含む */
+}
+
+.field input[type="text"]:focus,
+.field input[type="email"]:focus,
+.field input[type="password"]:focus,
+.field select:focus {
+  outline: none; /* フォーカス時のアウトラインを削除 */
+  border-color: #ff69b4; /* フォーカス時の枠線の色 */
+}
+
+.actions input[type="submit"] {
+  padding: 10px 20px;
+  border: 2px solid #ff85c0;
+  border-radius: 25px;
+  background-color: #ff69b4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.actions input[type="submit"]:hover {
+  background-color: #ff85c0;
+  border-color: #ff69b4;
+}
+
+.actions input[type="submit"]:active {
+  background-color: #ff69b4;
+  border-color: #ff85c0;
+}
