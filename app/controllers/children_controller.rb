@@ -1,4 +1,5 @@
 class ChildrenController < ApplicationController
+  before_action :authenticate_user!
   def index
     @children = current_user.children
   end
@@ -6,5 +7,5 @@ class ChildrenController < ApplicationController
   def new
     @children = Child.new
   end
-  
+
 end
