@@ -1,4 +1,4 @@
-<div class="children-container">
+<div class="children-index-container">
   <h1>子供一覧</h1>
 
   <% if user_signed_in? %>
@@ -8,27 +8,27 @@
   <table class="child-table">
     <thead>
       <tr>
-        <th>ニックネーム</th>
-        <th>名字</th>
-        <th>名前</th>
-        <th>名字（カナ）</th>
-        <th>名前（カナ）</th>
-        <th>生年月日</th>
-        <th>性別</th>
-        <th>詳細</th>
+        <th class="nickname-column">ニックネーム</th>
+        <th class="name-column">名字</th>
+        <th class="name-column">名前</th>
+        <th class="kana-column">名字（カナ）</th>
+        <th class="kana-column">名前（カナ）</th>
+        <th class="birth-date-column">生年月日</th>
+        <th class="gender-column">性別</th>
+        <th class="details-column">詳細</th>
       </tr>
     </thead>
     <tbody>
       <% @children.each do |child| %>
         <tr>
-          <td><%= child.nickname %></td>
-          <td><%= child.family_name %></td>
-          <td><%= child.first_name %></td>
-          <td><%= child.family_name_kana %></td>
-          <td><%= child.first_name_kana %></td>
-          <td><%= child.birth_day.strftime("%Y年%m月%d日") %></td>
-          <td><%= child.gender_jp %></td>
-          <td><%= link_to '詳細', child_path(child), class: 'details-link' %></td>
+          <td class="nickname-column"><%= child.nickname %></td>
+          <td class="name-column"><%= child.family_name %></td>
+          <td class="name-column"><%= child.first_name %></td>
+          <td class="kana-column"><%= child.family_name_kana %></td>
+          <td class="kana-column"><%= child.first_name_kana %></td>
+          <td class="birth-date-column"><%= child.birth_day.strftime("%Y年%m月%d日") %></td>
+          <td class="gender-column"><%= child.gender_jp %></td>
+          <td class="details-column"><%= link_to '詳細', child_path(child), class: 'details-link' %></td>
         </tr>
       <% end %>
     </tbody>
