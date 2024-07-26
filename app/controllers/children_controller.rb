@@ -20,6 +20,17 @@ class ChildrenController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    if @child.update(child_params)
+      redirect_to children_path
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
   def destroy
     @child.destroy
     redirect_to children_path

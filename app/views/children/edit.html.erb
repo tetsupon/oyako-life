@@ -1,0 +1,44 @@
+<div class="children-container">
+  <h1>子供情報の編集</h1>
+
+  <%= form_with(model: @child, local: true) do |form| %>
+    <div class="form-group">
+      <%= form.label :nickname %>
+      <%= form.text_field :nickname, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :family_name %>
+      <%= form.text_field :family_name, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :first_name %>
+      <%= form.text_field :first_name, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :family_name_kana %>
+      <%= form.text_field :family_name_kana, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :first_name_kana %>
+      <%= form.text_field :first_name_kana, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :gender %>
+      <%= form.select :gender, options_for_select([['設定なし', ''], ['男の子', 'male'], ['女の子', 'female']], @child.gender), {}, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :birth_day %>
+      <%= form.date_select :birth_day, start_year: Date.today.year - 20, end_year: Date.today.year + 1, class: 'form-control' %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit '更新する', class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+</div>

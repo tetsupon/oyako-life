@@ -29,6 +29,7 @@
           <td><%= child.birth_day.strftime("%Y年%m月%d日") %></td>
           <td><%= child.gender_jp %></td>
           <td><%= link_to '詳細', child_path(child), class: 'details-link' %></td>
+          <td><%= link_to '編集', edit_child_path(child), class: 'edit-link' %></td>
           <td><%= link_to '削除', child_path(child), data: { turbo_method: :delete }, class:'delete-link' %></td>
         </tr>
       <% end %>
