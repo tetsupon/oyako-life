@@ -1,14 +1,5 @@
-class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable   
-
-
-  has_many :children
-
-  PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i.freeze
-  validates_format_of :password, with: PASSWORD_REGEX
+class Child < ApplicationRecord
+  belongs_to :user
 
   with_options presence: true do
     # ニックネームのバリデーション
@@ -29,5 +20,20 @@ class User < ApplicationRecord
     validates :birth_day
     
   end
-    
-end  
+
+  def gender_jp
+    case gender
+    when 'male'
+      '男'
+    when 'female'
+      '女'
+    else
+      '不明'
+    end
+  end
+
+  # 生年月日をフォーマットするメソッド
+  def formatted_birth_day
+    birth_day.strftime("%Y年%m月%d日") if birth_day.present?
+  end
+end

@@ -1,0 +1,52 @@
+<div class="children-container">
+  <h2>子供情報の追加</h2>
+
+  <%= form_with(model: @child, local: true) do |f| %>
+
+  <%= render 'shared/error_messages', model: f.object %>
+
+  
+
+    <div class="field">
+      <%= f.label :nickname, "ニックネーム"  %>
+      <%= f.text_field :nickname,autofocus: true %>
+    </div>
+   <div class="field-group">
+    <div class="field">
+      <%= f.label :family_name, "名字"  %>
+      <%= f.text_field :family_name,autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :first_name, "名前"   %>
+      <%= f.text_field :first_name,autofocus: true %>
+    </div>
+   </div> 
+
+   <div class="field-group">
+    <div class="field">
+      <%= f.label :family_name_kana, "名字（カナ）"  %>
+      <%= f.text_field :family_name_kana,autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :first_name_kana, "名前（カナ）"  %>
+      <%= f.text_field :first_name_kana,autofocus: true %>
+    </div>
+   </div> 
+
+    <div class="field">
+      <%= f.label :gender, "性別"  %>
+      <%= f.select :gender, [['設定なし', ''], ['男性', 'male'], ['女性', 'female']], { include_blank: true } %>
+    </div>
+
+    <div class="field">
+      <%= f.label :birth_day, "生年月日"  %>
+      <%= f.date_select :birth_day, start_year: 1900, end_year: Time.now.year, prompt: { year: '年', month: '月', day: '日' } %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "追加" %>
+    </div>
+  <% end %>
+</div>

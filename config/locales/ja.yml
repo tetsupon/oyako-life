@@ -2,6 +2,7 @@ ja:
   activerecord:
     models:
       user: ユーザー
+      child: 子供
     attributes:
       user:
         nickname: ニックネーム
@@ -14,6 +15,14 @@ ja:
         first_name_kana: 名前（カナ）
         gender: 性別
         birth_day: 生年月日
+      child:
+        nickname: ニックネーム
+        family_name: 名字
+        first_name: 名前
+        family_name_kana: 名字（カナ）
+        first_name_kana: 名前（カナ）
+        birth_day: 生年月日
+        gender: 性別
   errors:
     messages:
       blank: "を入力してください"
@@ -29,4 +38,5 @@ ja:
     failure:
       user:
         invalid: "メールアドレスまたはパスワードが正しくありません。"
+
 
