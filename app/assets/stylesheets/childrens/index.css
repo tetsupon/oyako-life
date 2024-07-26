@@ -66,3 +66,12 @@ h1 {
 .details-link:hover {
   color: #ff85c0;
 }
+
+.delete-link {
+  color: red;
+  text-decoration: none;
+}
+
+.delete-link:hover {
+  text-decoration: underline;
+}
