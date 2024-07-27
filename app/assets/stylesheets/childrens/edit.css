@@ -71,3 +71,19 @@ form {
 .edit-link:hover {
   text-decoration: underline;
 }
+
+.actions .btn-secondary {
+  background-color: #cccccc; /* セカンダリボタンの色 */
+}
+
+.actions .btn-secondary:hover {
+  background-color: #dddddd; /* ホバー時の色 */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions .btn-secondary:active {
+  background-color: #cccccc; /* クリック時の色 */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
