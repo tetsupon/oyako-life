@@ -36,6 +36,9 @@ class ChildrenController < ApplicationController
     redirect_to children_path
   end
   
+  def show
+  end
+
 
   private
 

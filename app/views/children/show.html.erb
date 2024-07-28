@@ -1,0 +1,24 @@
+<div class="child-show-container">
+  <h1>子供詳細情報</h1>
+
+  <div class="child-details">
+    <% if @child.image.attached? %>
+      <div class="child-image">
+        <%= image_tag @child.image, class: 'child-image-img' %>
+      </div>
+    <% end %>
+    <p><strong>ニックネーム:</strong> <%= @child.nickname %></p>
+    <p><strong>名前:</strong> <%= @child.family_name %> <%= @child.first_name %></p>
+    <p><strong>名前 (カナ):</strong> <%= @child.family_name_kana %> <%= @child.first_name_kana %></p>
+    <p><strong>性別:</strong> <%= @child.gender == 'male' ? '男の子' : @child.gender == 'female' ? '女の子' : '設定なし' %></p>
+    <p><strong>生年月日:</strong> <%= @child.birth_day %></p>
+  </div>
+
+<div class="actions">
+  <%= link_to '編集', edit_child_path(@child), class: 'btn btn-primary btn-edit' %>
+  <%= link_to '削除', child_path(@child), method: :delete, data: { confirm: '本当に削除しますか？' }, class: 'btn btn-danger btn-delete' %>
+  <%= link_to 'トップページに戻る', root_path, class: 'btn btn-secondary' %>
+</div>
+</div>
+
+</div>
