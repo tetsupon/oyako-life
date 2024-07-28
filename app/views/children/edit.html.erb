@@ -40,6 +40,11 @@
       <%= f.date_select :birth_day, start_year: Date.today.year - 20, end_year: Date.today.year + 1, class: 'form-control' %>
     </div>
 
+    <div class="form-group">
+      <%= f.label :image, "写真" %>
+      <%= f.file_field :image %>
+    </div>
+
     <div class="actions">
       <%= f.submit '更新する', class: 'btn btn-primary' %>
     </div>

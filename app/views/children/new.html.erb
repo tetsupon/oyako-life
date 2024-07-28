@@ -45,6 +45,11 @@
       <%= f.date_select :birth_day, start_year: 1900, end_year: Time.now.year, prompt: { year: '年', month: '月', day: '日' } %>
     </div>
 
+    <div class="field">
+      <%= f.label :image, "写真" %>
+      <%= f.file_field :image %>
+    </div>
+
     <div class="actions">
       <%= f.submit "追加" %>
     </div>
