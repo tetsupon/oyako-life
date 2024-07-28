@@ -8,6 +8,7 @@ module BoardApp
   class Application < Rails::Application
     config.time_zone = 'Tokyo'
     config.active_record.default_timezone = :local
+    config.active_storage.variant_processor = :mini_magick
 
     # 以下の記述を追記する(設定必須)
     # デフォルトのlocaleを日本語(:ja)にする
