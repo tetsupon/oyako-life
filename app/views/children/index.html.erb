@@ -9,28 +9,16 @@
     <thead>
       <tr>
         <th>ニックネーム</th>
-        <th>名字</th>
-        <th>名前</th>
-        <th>名字（カナ）</th>
-        <th>名前（カナ）</th>
-        <th>生年月日</th>
         <th>性別</th>
-        <th>詳細</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
       <% @children.each do |child| %>
         <tr>
           <td><%= child.nickname %></td>
-          <td><%= child.family_name %></td>
-          <td><%= child.first_name %></td>
-          <td><%= child.family_name_kana %></td>
-          <td><%= child.first_name_kana %></td>
-          <td><%= child.birth_day.strftime("%Y年%m月%d日") %></td>
           <td><%= child.gender_jp %></td>
           <td><%= link_to '詳細', child_path(child), class: 'details-link' %></td>
-          <td><%= link_to '編集', edit_child_path(child), class: 'edit-link' %></td>
-          <td><%= link_to '削除', child_path(child), data: { turbo_method: :delete }, class:'delete-link' %></td>
         </tr>
       <% end %>
     </tbody>

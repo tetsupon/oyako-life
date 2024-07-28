@@ -11,7 +11,7 @@
     <p><strong>名前:</strong> <%= @child.family_name %> <%= @child.first_name %></p>
     <p><strong>名前 (カナ):</strong> <%= @child.family_name_kana %> <%= @child.first_name_kana %></p>
     <p><strong>性別:</strong> <%= @child.gender == 'male' ? '男の子' : @child.gender == 'female' ? '女の子' : '設定なし' %></p>
-    <p><strong>生年月日:</strong> <%= @child.birth_day %></p>
+    <p><strong>生年月日:</strong> <%= @child.birth_day.strftime("%Y年%m月%d日")%></p>
   </div>
 
 <div class="actions">
