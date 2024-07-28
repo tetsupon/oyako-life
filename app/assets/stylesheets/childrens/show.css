@@ -1,0 +1,140 @@
+/* 全体の設定 */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe4e1; /* 背景を淡いピンクに */
+  color: #333;
+}
+
+.child-show-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #ff69b4; /* ピンク色 */
+  font-family: 'Pacifico', cursive; /* 手書き風のフォント */
+}
+
+.child-details {
+  margin-bottom: 20px;
+}
+
+.child-details p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.child-details strong {
+  color: #ff69b4; /* ピンク色 */
+}
+
+.child-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.child-image-img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-image {
+  width: 100%;
+  height: 200px; /* 必要に応じて高さを調整 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #f0f0f0;
+  color: #aaa;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+  text-align: center;
+}
+
+.actions .btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff69b4; /* ピンク色 */
+  border: none;
+  border-radius: 25px; /* 丸みを帯びたボタン */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-bottom: 15px; /* ボタンの間隔を調整 */
+}
+
+.actions .btn-primary:hover {
+  background-color: #ff85c0; /* ホバー時の色 */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions .btn-primary:active {
+  background-color: #ff69b4; /* クリック時の色 */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.actions .btn-secondary {
+  background-color: #cccccc; /* セカンダリボタンの色 */
+}
+
+.actions .btn-secondary:hover {
+  background-color: #dddddd; /* ホバー時の色 */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions .btn-secondary:active {
+  background-color: #cccccc; /* クリック時の色 */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.actions .btn-danger {
+  background-color: #ff6b6b; /* 危険な操作のための赤色 */
+}
+
+.actions .btn-danger:hover {
+  background-color: #ff8787; /* ホバー時の色 */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions .btn-danger:active {
+  background-color: #ff6b6b; /* クリック時の色 */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 編集・削除ボタン用のスタイル */
+.actions .btn-edit,
+.actions .btn-delete {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.actions .btn-edit:hover,
+.actions .btn-delete:hover {
+  transform: scale(1.05); /* ホバー時に少し大きくなる */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* ホバー時のシャドウを強化 */
+}
+
+.actions .btn-edit:active,
+.actions .btn-delete:active {
+  transform: scale(1); /* クリック時に元の大きさに戻る */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* クリック時のシャドウ */
+}

@@ -1,0 +1,89 @@
+
+/* 子供情報編集ページのスタイル */
+.children-container {
+  background-color: #ffe4e1; /* 背景を可愛いピンクに */
+  padding: 20px;
+  border-radius: 25px; /* 枠を丸くする */
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.children-container h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff69b4; /* ピンクのタイトル */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ff69b4; /* ピンクの枠線 */
+  border-radius: 20px; /* 枠を丸くする */
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.actions .btn-primary {
+  background-color: #ff69b4; /* ボタンをピンクに */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px; /* ボタンの枠を丸くする */
+}
+
+.actions .btn-primary:hover {
+  background-color: #ff1493; /* ホバーカラー */
+}
+
+
+
+.edit-link {
+  color: blue;
+  text-decoration: none;
+}
+
+.edit-link:hover {
+  text-decoration: underline;
+}
+
+.actions .btn-secondary {
+  background-color: #cccccc; /* セカンダリボタンの色 */
+}
+
+.actions .btn-secondary:hover {
+  background-color: #dddddd; /* ホバー時の色 */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions .btn-secondary:active {
+  background-color: #cccccc; /* クリック時の色 */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
