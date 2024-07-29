@@ -46,7 +46,7 @@
 |---------------------|-----------|--------------------------------|--------------------------|
 | child_id            | references| null: false, foreign_key: true | 子供のID                  |
 | record_date         | date      | null: false                    | 成長記録の日付            |
-| growth_type         | string    | null: false                    | 成長の種類（プルダウン表示）|
+| growth_type_id      | string    | null: false                    | 成長の種類（プルダウン表示）|
 | height              | float     | null: false                    | 身長                     |
 | weight              | float     | null: false                    | 体重                     |
 | description         | text      |                                | 成長の詳細説明                     |
@@ -59,7 +59,7 @@
 |---------------------|-----------|--------------------------------|--------------------------|
 | child_id            | references| null: false, foreign_key: true | 子供のID             |
 | record_date         | date      | null: false                    | 出来事の日付            |
-| event_type          | string    | null: false                    | 出来事の種類（プルダウン表示） |
+| event_type_id       | string    | null: false                    | 出来事の種類（プルダウン表示） |
 | description         | text      |                                | 出来事の詳細説明          |
 
 ### Association
@@ -100,7 +100,7 @@
 |---------------------|-----------|--------------------------------|--------------------------|
 | child_id            | references| null: false, foreign_key: true | 子供のID             |
 | meal_date           | datetime  | null: false                    | 食事の日付・時間             |
-| meal_type           | string    | null: false                    | 食事の種類               |
+| meal_type_id        | string    | null: false                    | 食事の種類               |
 | meal_name           | string    | null: false                    | 食品名                   |
 | quantity            | float     |                                | 食品の摂取量             |
 | description         | text      |                                | 食事の詳細説明            |
