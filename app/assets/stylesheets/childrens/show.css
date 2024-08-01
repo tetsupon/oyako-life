@@ -68,7 +68,7 @@ h1 {
   color: #fff;
   background-color: #ff69b4; /* ピンク色 */
   border: none;
-  border-radius: 25px; /* 丸みを帯びたボタン */
+  border-radius: 15px; /* 丸みを帯びたボタン */
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

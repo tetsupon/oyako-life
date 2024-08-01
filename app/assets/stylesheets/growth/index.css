@@ -1,0 +1,91 @@
+
+/* 全体の設定 */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* 背景色を淡いグレーに */
+  color: #333;
+}
+
+.growth-records-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.growth-record-title {
+  text-align: center;
+  color: #ff69b4; /* ピンク色 */
+  font-family: 'Pacifico', cursive; /* 手書き風のフォント */
+  margin-bottom: 20px;
+}
+
+.growths-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.growths-table th, .growths-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.growths-table th {
+  background-color: #ff69b4; /* ピンク色 */
+  color: #fff;
+}
+
+.growths-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.growths-table img {
+  max-width: 100px;
+  border-radius: 10px;
+}
+
+.actions .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff69b4; /* ピンク色 */
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.actions .btn:hover {
+  background-color: #ff85c0; /* ホバー時の色 */
+  transform: translateY(-3px);
+}
+
+.actions .btn-secondary {
+  background-color: #cccccc; /* セカンダリボタンの色 */
+}
+
+.actions .btn-secondary:hover {
+  background-color: #dddddd; /* ホバー時の色 */
+}
+
+.actions .btn-danger {
+  background-color: #ff6b6b; /* 危険な操作のための赤色 */
+}
+
+.actions .btn-danger:hover {
+  background-color: #ff8787; /* ホバー時の色 */
+}
+
+/* 新しい記録を追加ボタンのスタイル */
+.new-record-button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+}
