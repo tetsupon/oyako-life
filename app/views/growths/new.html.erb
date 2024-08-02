@@ -1,1 +1,45 @@
-<h1>追加</h1>
+<div class="new-growth-record-container">
+  <h2>新しい成長記録を追加</h2>
+
+  <%= form_with(model: [@child, @growth], local: true) do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <div class="form-group">
+      <%= f.label :record_date, "記録日" %>
+      <%= f.date_select :record_date, start_year: Date.today.year - 20, end_year: Date.today.year + 1, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :growth_type_id, "成長の種類" %>
+      <%= f.collection_select :growth_type_id, GrowthType.all, :id, :name, { include_blank: true }, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :height, "身長 (cm)" %>
+      <%= f.number_field :height, step: 0.1, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :weight, "体重 (kg)" %>
+      <%= f.number_field :weight, step: 0.1, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :description, "詳細" %>
+      <%= f.text_area :description, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :image, "写真" %>
+      <%= f.file_field :image, class: 'form-control' %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "追加", class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= link_to '戻る', child_growths_path(@child), class: 'btn btn-secondary' %>
+  </div>
+</div>
