@@ -1,0 +1,78 @@
+/* app/assets/stylesheets/growths.css */
+
+.new-growth-record-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-growth-record-container h2 {
+  text-align: center;
+  color: #ff69b4;
+  font-family: 'Pacifico', cursive;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ff69b4;
+}
+
+.form-group .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.actions {
+  text-align: center;
+}
+
+.actions .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.actions .btn-primary {
+  background-color: #ff69b4;
+}
+
+.actions .btn-primary:hover {
+  background-color: #ff85c0;
+  transform: translateY(-3px);
+}
+
+.actions .btn-primary:active {
+  background-color: #ff69b4;
+  transform: translateY(0);
+}
+
+.actions .btn-secondary {
+  background-color: #cccccc;
+}
+
+.actions .btn-secondary:hover {
+  background-color: #dddddd;
+  transform: translateY(-3px);
+}
+
+.actions .btn-secondary:active {
+  background-color: #cccccc;
+  transform: translateY(0);
+}
