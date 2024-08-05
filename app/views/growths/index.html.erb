@@ -17,7 +17,7 @@
       <% if @growths.present? %>
         <% @growths.each do |growth| %>
           <tr>
-            <td><%= growth.record_date %></td>
+            <td><%= growth.record_date.strftime("%Y年%m月%d日") %></td>
             <td><%= growth.growth_type.name %></td>
             <td><%= growth.height %></td>
             <td><%= growth.weight %></td>
