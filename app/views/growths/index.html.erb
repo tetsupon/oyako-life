@@ -10,6 +10,7 @@
         <th>種類</th>
         <th>身長 (cm)</th>
         <th>体重 (kg)</th>
+        <th>詳細</th>
       </tr>
     </thead>
     <tbody>
@@ -20,6 +21,7 @@
             <td><%= growth.growth_type.name %></td>
             <td><%= growth.height %></td>
             <td><%= growth.weight %></td>
+            <td><%= link_to '詳細', '#' %></td>
           </tr>
         <% end %>
       <% else %>
@@ -30,3 +32,7 @@
     </tbody>
   </table>
 </div>
+
+<div class="actions">
+  <%= link_to '戻る', child_path(@child), class: 'btn btn-secondary' %>
+</div> 
