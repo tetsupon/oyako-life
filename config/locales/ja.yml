@@ -3,6 +3,7 @@ ja:
     models:
       user: ユーザー
       child: 子供
+      growth: 成長記録
     attributes:
       user:
         nickname: ニックネーム
@@ -23,6 +24,12 @@ ja:
         first_name_kana: 名前（カナ）
         birth_day: 生年月日
         gender: 性別
+      growth:
+        growth_type_id: 成長の種類
+        height: 身長
+        weight: 体重
+        description: 詳細説明
+        record_date: 記録日
   errors:
     messages:
       blank: "を入力してください"
@@ -38,5 +45,3 @@ ja:
     failure:
       user:
         invalid: "メールアドレスまたはパスワードが正しくありません。"
-
-
