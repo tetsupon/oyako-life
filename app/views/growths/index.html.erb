@@ -21,7 +21,7 @@
             <td><%= growth.growth_type.name %></td>
             <td><%= growth.height %></td>
             <td><%= growth.weight %></td>
-            <td><%= link_to '詳細', '#' %></td>
+            <td><%= link_to '詳細', child_growth_path(@child, growth) %></td>
           </tr>
         <% end %>
       <% else %>
