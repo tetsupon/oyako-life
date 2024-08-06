@@ -1,0 +1,52 @@
+/* 成長記録詳細ページ用CSS */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe4e1; /* 背景を淡いピンクに */
+  color: #333;
+}
+
+.growth-detail-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.growth-title {
+  text-align: center;
+  color: #ff69b4; /* ピンク色 */
+  font-family: 'Pacifico', cursive; /* 手書き風のフォント */
+}
+
+.growth-detail {
+  margin-bottom: 20px;
+}
+
+.growth-detail p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.growth-detail strong {
+  color: #ff69b4; /* ピンク色 */
+}
+
+.growth-images {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.growth-images img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.actions {
+  text-align: center;
+}
+
+
