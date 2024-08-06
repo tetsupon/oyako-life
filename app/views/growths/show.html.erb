@@ -1,0 +1,29 @@
+<!-- app/views/growths/show.html.erb -->
+<div class="growth-detail-container">
+  <h2 class="growth-title"><%= @child.nickname %>の成長記録詳細</h2>
+
+  <div class="growth-detail">
+    <p><strong>記録日:</strong> <%= @growth.record_date %></p>
+    <p><strong>成長の種類:</strong> <%= @growth.growth_type.name %></p>
+    <p><strong>身長:</strong> <%= @growth.height %> cm</p>
+    <p><strong>体重:</strong> <%= @growth.weight %> kg</p>
+    <p><strong>詳細説明:</strong> <%= @growth.description %></p>
+
+    <% if @growth.images.attached? %>
+      <p><strong>写真:</strong></p>
+      <div class="growth-images">
+        <% @growth.images.each do |image| %>
+          <%= image_tag image, class: 'growth-image' %>
+        <% end %>
+      </div>
+    <% else %>
+      <p>写真がありません。</p>
+    <% end %>
+  </div>
+
+  <div class="actions">
+    <%= link_to '編集', edit_child_growth_path(@child, @growth), class: 'btn btn-secondary' %>
+    <%= link_to '削除', child_growth_path(@child, @growth), method: :delete, data: { confirm: '本当に削除しますか？' }, class: 'btn btn-danger growth-delete' %>
+    <%= link_to '成長記録一覧に戻る', child_growths_path(@child), class: 'btn btn-secondary' %>
+  </div>
+</div>
