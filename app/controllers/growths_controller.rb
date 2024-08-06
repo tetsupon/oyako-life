@@ -1,7 +1,7 @@
 class GrowthsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_child
-  before_action :set_growth, only: [:show]
+  before_action :set_growth, only: [:show, :creat ]
 
   def index
     @growths = @child.growths.order(record_date: :desc)
@@ -28,7 +28,7 @@ class GrowthsController < ApplicationController
   def set_child
     @child = current_user.children.find(params[:child_id])
   end
-  
+
   def set_growth
     @growth = @child.growths.find(params[:id])
   end
