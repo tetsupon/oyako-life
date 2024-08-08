@@ -1,7 +1,7 @@
 class GrowthsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_child
-  before_action :set_growth, only: [:show, :creat ]
+  before_action :set_growth, only: [:show, :edit, :update, :destroy]
 
   def index
     @growths = @child.growths.order(record_date: :desc)
@@ -21,6 +21,17 @@ class GrowthsController < ApplicationController
   end
 
   def show
+  end
+
+  def edit
+  end
+
+  def update
+    if @growth.update(growth_params)
+      redirect_to child_growth_path(@child, @growth)
+    else
+      render :edit
+    end
   end
 
   private
