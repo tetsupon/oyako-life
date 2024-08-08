@@ -34,6 +34,7 @@ class GrowthsController < ApplicationController
     end
   end
 
+  
   private
 
   def set_child
