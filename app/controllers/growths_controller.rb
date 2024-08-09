@@ -34,7 +34,13 @@ class GrowthsController < ApplicationController
     end
   end
 
-  
+  def destroy
+    @growth.destroy
+    redirect_to child_growths_path(@child)
+  end
+
+
+
   private
 
   def set_child
