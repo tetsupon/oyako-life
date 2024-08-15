@@ -68,7 +68,7 @@ h1 {
   color: #fff;
   background-color: #ff69b4; /* ピンク色 */
   border: none;
-  border-radius: 25px; /* 丸みを帯びたボタン */
+  border-radius: 15px; /* 丸みを帯びたボタン */
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -137,4 +137,45 @@ h1 {
 .actions .btn-delete:active {
   transform: scale(1); /* クリック時に元の大きさに戻る */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* クリック時のシャドウ */
+}
+
+
+
+/*育児記録・出来事記録・健康管理記録・食事記録の装飾*/
+.record-buttons, .action-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.record-buttons .btn, .action-buttons .btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 25px; /* 丸みを帯びたボタン */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-bottom: 15px; /* ボタンの間隔を調整 */
+  display: inline-block;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.record-buttons .btn-record {
+  background-color: #ff69b4; /* ピンク色 */
+}
+
+.record-buttons .btn-record:hover {
+  background-color: #ff85c0; /* ホバー時の色 */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.record-buttons .btn-record:active {
+  background-color: #ff69b4; /* クリック時の色 */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

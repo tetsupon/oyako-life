@@ -1,0 +1,38 @@
+<div class="growth-records-container">
+  <h2><%= @child.nickname %>の成長記録</h2>
+
+  <%= link_to '新しい記録を追加', new_child_growth_path(@child), class: 'btn btn-primary' %>
+
+  <table class="growths-table">
+    <thead>
+      <tr>
+        <th>日付</th>
+        <th>種類</th>
+        <th>身長 (cm)</th>
+        <th>体重 (kg)</th>
+        <th>詳細</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% if @growths.present? %>
+        <% @growths.each do |growth| %>
+          <tr>
+            <td><%= growth.record_date.strftime("%Y年%m月%d日") %></td>
+            <td><%= growth.growth_type.name %></td>
+            <td><%= growth.height %></td>
+            <td><%= growth.weight %></td>
+            <td><%= link_to '詳細', child_growth_path(@child, growth) %></td>
+          </tr>
+        <% end %>
+      <% else %>
+        <tr>
+          <td colspan="6">成長記録がありません。</td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div class="actions">
+  <%= link_to '戻る', child_path(@child), class: 'btn btn-secondary' %>
+</div> 

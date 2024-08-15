@@ -1,0 +1,41 @@
+<div class="growth-form-container">
+  <h2 class="growth-title"><%= @child.nickname %>の成長記録を編集</h2>
+
+  <%= form_with(model: [@child, @growth], local: true) do |f| %>
+    <div class="form-group">
+      <%= f.label :record_date, "記録日" %>
+      <%= f.date_field :record_date, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :growth_type_id, "成長の種類" %>
+      <%= f.collection_select :growth_type_id, GrowthType.all, :id, :name, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :height, "身長 (cm)" %>
+      <%= f.number_field :height, step: 0.1, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :weight, "体重 (kg)" %>
+      <%= f.number_field :weight, step: 0.1, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :description, "詳細説明" %>
+      <%= f.text_area :description, class: "form-control", rows: 5 %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :images, "写真" %>
+      <%= f.file_field :images, multiple: true, class: "form-control" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "更新", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+
+  <%= link_to 'キャンセル', child_growth_path(@child, @growth), class: 'btn btn-secondary' %>
+</div>

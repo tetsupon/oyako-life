@@ -1,5 +1,6 @@
 class Child < ApplicationRecord
   belongs_to :user
+  has_many :growths
 
   has_one_attached :image
 
