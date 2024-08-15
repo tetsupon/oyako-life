@@ -1,13 +1,14 @@
 FactoryBot.define do
   factory :child do
-    nickname { "TestNickname" }
+    association :user
+
+    nickname { Faker::Name.name }
     family_name { "山田" }
     first_name { "太郎" }
     family_name_kana { "ヤマダ" }
     first_name_kana { "タロウ" }
     gender { 'male' }
     birth_day { Date.new(2020, 1, 1) }
-    association :user
 
     trait :with_image do
       after(:build) do |child|
