@@ -1,1 +1,30 @@
-<h1>テスト</h1>
+<div class="events-container">
+  <h2><%= @child.nickname %>の出来事一覧</h2>
+
+  <%= link_to '新しい出来事を追加する', new_child_event_path(@child), class: 'btn btn-primary' %>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>日付</th>
+        <th>出来事の種類</th>
+        <th>詳細</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @events.each do |event| %>
+        <tr>
+          <td><%= event.record_date.strftime("%Y年%m月%d日") %></td>
+          <td><%= event.event_type.name %></td>
+          <td><%= event.description %></td>
+          <td>
+            <%= link_to '編集', edit_child_event_path(@child, event), class: 'btn btn-secondary btn-sm' %>
+            <%= link_to '削除', child_event_path(@child, event), method: :delete, data: { confirm: '本当に削除しますか？' }, class: 'btn btn-danger btn-sm' %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <%= link_to 'トップページに戻る', root_path, class: 'btn btn-secondary' %>
+</div>
