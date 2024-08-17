@@ -1,6 +1,7 @@
 class Child < ApplicationRecord
   belongs_to :user
   has_many :growths
+  has_many :events
 
   has_one_attached :image
 
