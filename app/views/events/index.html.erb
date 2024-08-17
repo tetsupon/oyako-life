@@ -12,19 +12,22 @@
       </tr>
     </thead>
     <tbody>
-      <% @events.each do |event| %>
+      <% if @growths.present? %>
+        <% @events.each do |event| %>
+          <tr>
+            <td><%= event.record_date.strftime("%Y年%m月%d日") %></td>
+            <td><%= event.event_type.name %></td>
+            <td><%= event.description %></td>
+            <td><%= link_to '詳細', child_event_path(@child, event) %></td>
+          </tr>
+        <% end %>
+      <% else %> 
         <tr>
-          <td><%= event.record_date.strftime("%Y年%m月%d日") %></td>
-          <td><%= event.event_type.name %></td>
-          <td><%= event.description %></td>
-          <td>
-            <%= link_to '編集', edit_child_event_path(@child, event), class: 'btn btn-secondary btn-sm' %>
-            <%= link_to '削除', child_event_path(@child, event), method: :delete, data: { confirm: '本当に削除しますか？' }, class: 'btn btn-danger btn-sm' %>
-          </td>
+          <td colspan="6">出来事記録がありません。</td>
         </tr>
-      <% end %>
+      <% end %>       
     </tbody>
   </table>
 
-  <%= link_to 'トップページに戻る', root_path, class: 'btn btn-secondary' %>
+  <%= link_to '戻る', child_path(@child), class: 'btn btn-secondary' %>
 </div>
