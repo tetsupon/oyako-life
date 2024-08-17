@@ -21,7 +21,7 @@
  
   <div class="record-buttons">
     <%= link_to '成長記録を見る',  child_growths_path(@child) , class: 'btn btn-record' %>
-    <%= link_to '出来事記録を見る',  "#", class: 'btn btn-record' %>
+    <%= link_to '出来事記録を見る',  child_events_path(@child), class: 'btn btn-record' %>
     <%= link_to '健康管理記録を見る', "#", class: 'btn btn-record' %>
     <%= link_to '食事管理記録を見る',  "#", class: 'btn btn-record' %>
   </div>
