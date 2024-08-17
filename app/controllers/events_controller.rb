@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   before_action :set_child
 
   def index
-    @events = @child.events
+    @events = @child.events.order("created_at DESC")
   end
 
   private
