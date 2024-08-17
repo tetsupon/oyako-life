@@ -5,6 +5,10 @@ class EventsController < ApplicationController
     @events = @child.events.order("created_at DESC")
   end
 
+  def new
+    @event = @child.events.build
+  end
+
   private
 
   def set_child
