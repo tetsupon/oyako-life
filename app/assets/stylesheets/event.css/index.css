@@ -1,0 +1,71 @@
+.events-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* コンテナ内のテキストを中央揃えに */
+}
+
+.events-container h2 {
+  color: #ec407a;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.events-container .btn-primary {
+  background-color: #ec407a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.events-container .btn-primary:hover {
+  background-color: #d81b60;
+}
+
+.events-container .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.events-container .table th,
+.events-container .table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.events-container .table th {
+  background-color: #ec407a;
+  color: white;
+}
+
+.events-container .table tr:nth-child(even) {
+  background-color: #f8bbd0;
+}
+
+.events-container .table tr:hover {
+  background-color: #f48fb1;
+}
+
+.events-container .btn-secondary {
+  background-color: #cccccc;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block; /* インラインブロックで中央揃えが有効に */
+  margin: 0 auto; /* 左右の余白を自動に */
+}
+
+.events-container .btn-secondary:hover {
+  background-color: #dddddd; /* ホバー時の背景色 */
+}

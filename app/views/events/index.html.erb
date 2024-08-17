@@ -1,18 +1,19 @@
+<!-- app/views/events/index.html.erb -->
 <div class="events-container">
-  <h2><%= @child.nickname %>の出来事一覧</h2>
+  <h2><%= @child.nickname %>の出来事記録</h2>
 
-  <%= link_to '新しい出来事を追加する', new_child_event_path(@child), class: 'btn btn-primary' %>
+  <%= link_to '新しい記録を追加', new_child_event_path(@child), class: 'btn btn-primary' %>
 
   <table class="table table-striped">
     <thead>
       <tr>
         <th>日付</th>
-        <th>出来事の種類</th>
+        <th>種類</th>
         <th>詳細</th>
       </tr>
     </thead>
     <tbody>
-      <% if @growths.present? %>
+      <% if @events.present? %>
         <% @events.each do |event| %>
           <tr>
             <td><%= event.record_date.strftime("%Y年%m月%d日") %></td>
@@ -21,13 +22,13 @@
             <td><%= link_to '詳細', child_event_path(@child, event) %></td>
           </tr>
         <% end %>
-      <% else %> 
+      <% else %>
         <tr>
-          <td colspan="6">出来事記録がありません。</td>
+          <td colspan="4">出来事記録がありません。</td>
         </tr>
-      <% end %>       
+      <% end %>
     </tbody>
   </table>
 
-  <%= link_to '戻る', child_path(@child), class: 'btn btn-secondary' %>
+  <%= link_to '戻る', child_path(@child), class: 'btn btn-secondary'  %>
 </div>
