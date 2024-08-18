@@ -1,1 +1,32 @@
-<h1>テスト</h1>
+<div class="events-form-container">
+  <h2><%= @child.nickname %>の出来事を新規追加</h2>
+
+  <%= form_with(model: [@child, @event], local: true) do |f| %>
+    <div class="form-group">
+      <%= f.label :record_date, "日付" %>
+      <%= f.date_select :record_date, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :event_type_id, "出来事の種類" %>
+      <%= f.collection_select :event_type_id, EventType.all, :id, :name, prompt: "選択してください", class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :description, "詳細" %>
+      <%= f.text_area :description, rows: 5, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :image, '写真を追加' %>
+      <%= f.file_field :image, class: "form-control-file" %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.submit "出来事を記録", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+  <div class="actions">
+    <%= link_to '戻る', child_events_path(@child), class: 'btn btn-secondary' %>
+  </div>
+</div>

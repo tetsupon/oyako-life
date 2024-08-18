@@ -1,0 +1,78 @@
+.events-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.events-form-container h2 {
+  text-align: center;
+  color: #ec407a; /* ヘッダーの文字色を赤に変更 */
+}
+
+.events-form-container .form-group label {
+  color: #ec407a; /* ラベルの文字色をピンクに変更 */
+}
+
+
+.events-form-container h2 {
+  text-align: center;
+  color: #ec407a;
+}
+
+.events-form-container .form-group {
+  margin-bottom: 15px;
+}
+
+.events-form-container .form-actions {
+  text-align: center;
+}
+
+.events-form-container .btn-secondary {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.form-actions .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+
+.form-actions .btn-primary {
+  background-color: #ec407a;
+}
+
+.form-actions .btn-primary:hover {
+  background-color: #d81b60;
+  transform: translateY(-3px);
+}
+
+.form-actions .btn-primary:active {
+  background-color: #ec407a;
+  transform: translateY(0);
+}
+
+.events-container .btn-secondary {
+  background-color: #cccccc;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block; /* インラインブロックで中央揃えが有効に */
+  margin: 0 auto; /* 左右の余白を自動に */
+}
+
+.events-container .btn-secondary:hover {
+  background-color: #dddddd; /* ホバー時の背景色 */
+}
