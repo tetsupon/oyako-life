@@ -7,7 +7,7 @@ class Event < ApplicationRecord
 
   with_options presence: true do
     validates :record_date
-    validates :event_type_id, numericality: { other_than: 1 } 
+    validates :event_type_id
     validates :description
   end
 end

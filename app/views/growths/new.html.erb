@@ -11,7 +11,7 @@
 
     <div class="form-group">
       <%= f.label :growth_type_id, "成長の種類" %>
-      <%= f.collection_select :growth_type_id, GrowthType.all, :id, :name, { include_blank: true }, class: 'form-control' %>
+      <%= f.collection_select :growth_type_id, GrowthType.all, :id, :name, prompt: "選択してください", class: 'form-control' %>
     </div>
 
     <div class="form-group">

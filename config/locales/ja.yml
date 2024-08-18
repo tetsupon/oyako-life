@@ -4,6 +4,7 @@ ja:
       user: ユーザー
       child: 子供
       growth: 成長記録
+      event: 出来事
     attributes:
       user:
         nickname: ニックネーム
@@ -30,6 +31,11 @@ ja:
         weight: 体重
         description: 詳細説明
         record_date: 記録日
+      event:
+        event_type_id: 出来事の種類
+        record_date: 出来事の日付
+        description: 詳細説明
+        image: 写真        
   errors:
     messages:
       blank: "を入力してください"
