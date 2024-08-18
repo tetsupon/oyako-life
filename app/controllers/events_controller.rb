@@ -1,5 +1,7 @@
 class EventsController < ApplicationController
   before_action :set_child
+  before_action :set_event, only: [:show, :edit, :update, :destroy]
+
 
   def index
     @events = @child.events.order("created_at DESC")
@@ -18,10 +20,18 @@ class EventsController < ApplicationController
     end
   end  
 
+  def show
+  end
+
+
   private
 
   def set_child
     @child = Child.find(params[:child_id])
+  end
+
+  def set_event
+    @event = @child.events.find(params[:id])
   end
 
   def event_params
