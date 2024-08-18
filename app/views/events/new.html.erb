@@ -2,6 +2,9 @@
   <h2><%= @child.nickname %>の出来事を新規追加</h2>
 
   <%= form_with(model: [@child, @event], local: true) do |f| %>
+
+    <%= render 'shared/error_messages', model: f.object %>
+
     <div class="form-group">
       <%= f.label :record_date, "日付" %>
       <%= f.date_select :record_date, class: 'form-control' %>
