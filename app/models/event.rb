@@ -1,6 +1,7 @@
 class Event < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :child
+  has_one_attached :image
   
   belongs_to_active_hash :event_type
 
