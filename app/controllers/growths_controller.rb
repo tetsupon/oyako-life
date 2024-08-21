@@ -52,6 +52,6 @@ class GrowthsController < ApplicationController
   end
 
   def growth_params
-    params.require(:growth).permit(:record_date, :growth_type_id, :height, :weight, :description)
+    params.require(:growth).permit(:record_date, :growth_type_id, :height, :weight, :description, :images)
   end
 end
