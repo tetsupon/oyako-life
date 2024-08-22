@@ -23,6 +23,16 @@ class EventsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def update
+    if @event.update(event_params)
+      redirect_to child_event_path(@child, @event)
+    else
+      render :edit
+    end
+  end
 
   private
 
