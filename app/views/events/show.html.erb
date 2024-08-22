@@ -1,0 +1,23 @@
+<div class="event-detail-container">
+  <h2 class="event-title"><%= @child.nickname %>の出来事詳細</h2>
+
+  <div class="event-image">
+    <% if @event.image.attached? %>
+      <%= image_tag @event.image, class: 'event-image-img' %>
+    <% else %>
+      <div class="no-image">写真がありません</div>
+    <% end %>
+  </div>
+
+  <div class="event-detail">
+    <p><strong>記録日:</strong> <%= @event.record_date.strftime("%Y年%m月%d日") %></p>
+    <p><strong>出来事の種類:</strong> <%= EventType.find(@event.event_type_id).name %></p>
+    <p><strong>詳細説明:</strong> <%= @event.description %></p>
+
+  <div class="actions">
+    <%= link_to '編集', edit_child_event_path(@child, @event), class: 'btn btn-primary btn-edit' %>
+    <%= link_to '削除', child_event_path(@child, @event), method: :delete, data: {turbo_method: :delete},  class: 'btn btn-danger btn-delete' %>
+    <%= link_to '出来事一覧に戻る', child_events_path(@child), class: 'btn btn-secondary' %>
+  </div>
+</div>
+

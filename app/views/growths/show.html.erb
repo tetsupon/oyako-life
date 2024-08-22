@@ -1,24 +1,20 @@
 <div class="growth-detail-container">
   <h2 class="growth-title"><%= @child.nickname %>の成長記録詳細</h2>
 
+  <div class="growth-image">
+    <% if @growth.image.attached? %>
+      <%= image_tag @growth.image, class: 'growth-image-img' %>
+    <% else %>
+      <div class="no-image">写真がありません</div>
+    <% end %>
+  </div>  
+
   <div class="growth-detail">
     <p><strong>記録日:</strong> <%= @growth.record_date.strftime("%Y年%m月%d日") %></p>
     <p><strong>成長の種類:</strong> <%= @growth.growth_type.name %></p>
     <p><strong>身長:</strong> <%= @growth.height %> cm</p>
     <p><strong>体重:</strong> <%= @growth.weight %> kg</p>
     <p><strong>詳細説明:</strong> <%= @growth.description %></p>
-
-    <% if @growth.images.attached? %>
-      <p><strong>写真:</strong></p>
-      <div class="growth-images">
-        <% @growth.images.each do |image| %>
-          <%= image_tag image, class: 'growth-image' %>
-        <% end %>
-      </div>
-    <% else %>
-      <p>写真がありません。</p>
-    <% end %>
-  </div>
 
   <div class="actions">
     <%= link_to '編集', edit_child_growth_path(@child, @growth), class: 'btn btn-primary btn-edit' %>

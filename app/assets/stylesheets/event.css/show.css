@@ -5,7 +5,7 @@ body {
   color: #333;
 }
 
-.growth-detail-container {
+.event-detail-container {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
@@ -14,31 +14,31 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.growth-title {
+.event-title {
   text-align: center;
-  color: #ff69b4; /* ピンク色 */
+  color: #ec407a; /* ピンク色 */
   font-family: 'Pacifico', cursive; /* 手書き風のフォント */
 }
 
-.growth-detail {
+.event-detail {
   margin-bottom: 20px;
 }
 
-.growth-detail p {
+.event-detail p {
   margin: 10px 0;
   font-size: 18px;
 }
 
-.growth-detail strong {
-  color: #ff69b4; /* ピンク色 */
+.event-detail strong {
+  color: #ec407a; /* ピンク色 */
 }
 
-.growth-image {
+.event-image {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.growth-image-img {
+.event-image-img {
   max-width: 100%;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -57,8 +57,34 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.actions {
-  text-align: center;
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
+.action-buttons .btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #ff69b4;
+}
+
+.action-buttons .btn-edit {
+  background-color: #ff69b4;
+}
+
+.action-buttons .btn-danger {
+  background-color: #ff4040;
+}
+
+.action-buttons .btn-secondary {
+  background-color: #ccc;
+  color: #666;
+}
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_07_29_095249) do
+ActiveRecord::Schema[7.0].define(version: 2024_08_16_094629) do
   create_table "active_storage_attachments", charset: "utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -53,6 +53,16 @@ ActiveRecord::Schema[7.0].define(version: 2024_07_29_095249) do
     t.index ["user_id"], name: "index_children_on_user_id"
   end
 
+  create_table "events", charset: "utf8", force: :cascade do |t|
+    t.bigint "child_id", null: false
+    t.date "record_date", null: false
+    t.string "event_type_id", null: false
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["child_id"], name: "index_events_on_child_id"
+  end
+
   create_table "growths", charset: "utf8", force: :cascade do |t|
     t.bigint "child_id", null: false
     t.date "record_date", null: false
@@ -87,5 +97,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_07_29_095249) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "children", "users"
+  add_foreign_key "events", "children"
   add_foreign_key "growths", "children"
 end
