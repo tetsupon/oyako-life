@@ -2,22 +2,22 @@
   <h2 class="event-title"><%= @child.nickname %>の出来事を編集</h2>
 
   <%= form_with(model: [@child, @event], local: true) do |form| %>
-    <div class="form-group">
+    <div class="event-form-group">
       <%= form.label :record_date, "日付" %>
       <%= form.date_select :record_date, order: [:year, :month, :day], class: "form-control" %>
     </div>
 
-    <div class="form-group">
+    <div class="event-form-group">
       <%= form.label :event_type_id, "出来事の種類" %>
       <%= form.collection_select :event_type_id, EventType.all, :id, :name, prompt: "選択してください", class: "form-control" %>
     </div>
 
-    <div class="form-group">
+    <div class="event-form-group">
       <%= form.label :description, "詳細" %>
       <%= form.text_area :description, class: "form-control" %>
     </div>
 
-    <div class="form-group">
+    <div class="event-form-group">
       <%= form.label :image, "写真を追加" %>
       <%= form.file_field :image, multiple: true, class: "form-control" %>
     </div>

@@ -1,0 +1,91 @@
+.event-edit-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-title {
+  text-align: center;
+  color: #ec407a; 
+  font-family: 'Pacifico', cursive; /* 手書き風のフォント */
+}
+
+.event-form-group {
+  margin-bottom: 15px;
+}
+
+.event-form-group label {
+  display: block;
+  font-weight: bold;
+  color: #ec407a; 
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.event-form-group input,
+.event-form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ec407a; /* ピンクの枠線 */
+  border-radius: 20px; /* 枠を丸くする */
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.actions .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff69b4; /* ピンク色 */
+  border: none;
+  border-radius: 25px; /* 丸みを帯びたボタン */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-bottom: 15px; /* ボタンの間隔を調整 */
+}
+
+.actions .btn:hover {
+  background-color: #ff85c0; /* ホバー時の色 */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions .btn:active {
+  background-color: #ff69b4; /* クリック時の色 */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.actions .btn-secondary {
+  background-color: #cccccc; /* セカンダリボタンの色 */
+}
+
+.actions .btn-secondary:hover {
+  background-color: #dddddd; /* ホバー時の色 */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions .btn-secondary:active {
+  background-color: #cccccc; /* クリック時の色 */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
