@@ -1,5 +1,5 @@
-<div class="event-details-container">
-  <h2><%= @child.nickname %>の出来事詳細</h2>
+<div class="event-detail-container">
+  <h2 class="event-title"><%= @child.nickname %>の出来事詳細</h2>
 
   <div class="event-image">
     <% if @event.image.attached? %>
@@ -9,7 +9,7 @@
     <% end %>
   </div>
 
-  <div class="event-details">
+  <div class="event-detail">
     <p><strong>記録日:</strong> <%= @event.record_date.strftime("%Y年%m月%d日") %></p>
     <p><strong>出来事の種類:</strong> <%= EventType.find(@event.event_type_id).name %></p>
     <p><strong>詳細説明:</strong> <%= @event.description %></p>

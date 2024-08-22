@@ -1,22 +1,36 @@
-.event-details-container {
-  max-width: 700px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* 成長記録詳細ページ用CSS */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe4e1; /* 背景を淡いピンクに */
+  color: #333;
 }
 
-.event-details-container h2 {
+.event-detail-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-title {
   text-align: center;
-  color: #ec407a;
+  color: #ec407a; /* ピンク色 */
+  font-family: 'Pacifico', cursive; /* 手書き風のフォント */
+}
+
+.event-detail {
   margin-bottom: 20px;
 }
 
-.event-details p {
+.event-detail p {
+  margin: 10px 0;
   font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
+}
+
+.event-detail strong {
+  color: #ec407a; /* ピンク色 */
 }
 
 .event-image {
