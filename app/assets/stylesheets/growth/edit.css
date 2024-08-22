@@ -9,7 +9,7 @@
 
 .growth-title {
   text-align: center;
-  color: #ff69b4; /* ピンク色 */
+  color: #1e88e5; /* ピンク色 */
   font-family: 'Pacifico', cursive; /* 手書き風のフォント */
 }
 
@@ -20,7 +20,7 @@
 .form-group label {
   display: block;
   font-weight: bold;
-  color: #ff69b4; /* ピンク色 */
+  color: #1e88e5; /* ピンク色 */
   margin-bottom: 5px;
 }
 
@@ -29,6 +29,17 @@
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+}
+
+.growth-form-group input,
+.growth-form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #1e88e5; /* ピンクの枠線 */
+  border-radius: 20px; /* 枠を丸くする */
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
 }
 
 .actions {

@@ -1,9 +1,9 @@
-<div class="growth-records-container">
+<div class="growths-container">
   <h2><%= @child.nickname %>の成長記録</h2>
 
   <%= link_to '新しい記録を追加', new_child_growth_path(@child), class: 'btn btn-primary' %>
 
-  <table class="growths-table">
+  <table class="table table-striped">
     <thead>
       <tr>
         <th>日付</th>

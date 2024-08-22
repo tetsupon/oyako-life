@@ -11,7 +11,7 @@
 
 .new-growth-record-container h2 {
   text-align: center;
-  color: #ff69b4;
+  color: #1e88e5;
   font-family: 'Pacifico', cursive;
 }
 
@@ -23,7 +23,7 @@
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #ff69b4;
+  color: #1e88e5;
 }
 
 .form-group .form-control {
@@ -33,11 +33,11 @@
   border-radius: 5px;
 }
 
-.actions {
+.growth-actions {
   text-align: center;
 }
 
-.actions .btn {
+.growth-form-actions .btn {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
@@ -49,17 +49,18 @@
   cursor: pointer;
 }
 
-.actions .btn-primary {
-  background-color: #ff69b4;
+
+.growth-form-actions .btn-primary {
+  background-color: #1e88e5;
 }
 
-.actions .btn-primary:hover {
-  background-color: #ff85c0;
+.growth-form-actions .btn-primary:hover {
+  background-color: #0d47a1;
   transform: translateY(-3px);
 }
 
-.actions .btn-primary:active {
-  background-color: #ff69b4;
+.growth-form-actions .btn-primary:active {
+  background-color: #1e88e5;
   transform: translateY(0);
 }
 
