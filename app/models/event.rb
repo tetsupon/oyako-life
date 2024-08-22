@@ -1,7 +1,7 @@
 class Event < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :child
-  has_many_attached :images  # 複数の画像を添付する場合
+  has_one_attached :image 
   
   belongs_to_active_hash :event_type
 
