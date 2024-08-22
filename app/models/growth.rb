@@ -3,7 +3,7 @@ class Growth < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :growth_type
 
-  has_many_attached :images
+  has_one_attached :image
 
   with_options presence: true do
     validates :record_date
