@@ -9,7 +9,7 @@
 
 .growth-title {
   text-align: center;
-  color: #1e88e5; /* ピンク色 */
+  color: #1e88e5; 
   font-family: 'Pacifico', cursive; /* 手書き風のフォント */
 }
 
@@ -20,7 +20,7 @@
 .form-group label {
   display: block;
   font-weight: bold;
-  color: #1e88e5; /* ピンク色 */
+  color: #1e88e5; 
   margin-bottom: 5px;
 }
 
@@ -35,7 +35,7 @@
 .growth-form-group select {
   width: 100%;
   padding: 8px;
-  border: 2px solid #1e88e5; /* ピンクの枠線 */
+  border: 2px solid #1e88e5; 
   border-radius: 20px; /* 枠を丸くする */
   box-sizing: border-box;
   font-size: 14px;
