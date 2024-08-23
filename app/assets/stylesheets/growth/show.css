@@ -62,3 +62,21 @@ body {
 }
 
 
+.growth-form-actions {
+  text-align: center; /* ボタンを中央揃えにする */
+  margin-top: 20px; /* ボタンの上にスペースを追加 */
+}
+
+.growth-form-actions .btn-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #1e88e5; /* 青色に統一 */
+  border: none;
+  color: white;
+  text-decoration: none;
+}
+
+.growth-form-actions .btn-primary:hover {
+  background-color: #0d47a1; /* ホバー時の濃い青色 */
+}
