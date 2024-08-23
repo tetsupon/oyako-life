@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     resources :vaccinations
   end
   root to: "home#index"
+    # 健康管理トップページ
+  get 'health_management', to: 'health_management#index'
   resources :users, only: [:edit, :update]
 end
