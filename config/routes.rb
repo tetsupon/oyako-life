@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :children do
     resources :growths, only: [:index, :new, :create, :edit, :show, :update, :destroy]
     resources :events
+    resources :vaccinations
   end
   root to: "home#index"
   resources :users, only: [:edit, :update]
