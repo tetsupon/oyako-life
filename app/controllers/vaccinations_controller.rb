@@ -22,6 +22,16 @@ class VaccinationsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def update
+    if @vaccination.update(vaccination_params)
+      redirect_to child_vaccination_path(@child, @vaccination)
+    else
+      render :edit, status: :unprocessable_entit
+    end
+  end
 
   private
 
