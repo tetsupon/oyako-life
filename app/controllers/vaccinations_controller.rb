@@ -5,6 +5,11 @@ class VaccinationsController < ApplicationController
     @vaccinations = @child.vaccinations.order(scheduled_date: :asc)
   end
 
+  def new
+    @vaccination = @child.vaccinations.new
+  end
+
+
   private
 
   def set_child
