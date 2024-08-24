@@ -1,5 +1,6 @@
 class VaccinationsController < ApplicationController
   before_action :set_child
+  before_action :set_vaccination, only: [:show, :edit, :update, :destroy]
 
   def index
     @vaccinations = @child.vaccinations.order(scheduled_date: :asc)
@@ -18,6 +19,9 @@ class VaccinationsController < ApplicationController
     end
   end
 
+  def show
+  end
+
 
   private
 
@@ -27,5 +31,9 @@ class VaccinationsController < ApplicationController
 
   def vaccination_params
     params.require(:vaccination).permit(:vaccination_name, :scheduled_date, :administered_date, :administered_by, :description)
+  end
+
+  def set_vaccination
+    @vaccination = @child.vaccinations.find(params[:id])
   end
 end
