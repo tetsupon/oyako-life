@@ -18,7 +18,7 @@
           <tr>
             <td><%= event.record_date.strftime("%Y年%m月%d日") %></td>
             <td><%= event.event_type.name %></td>
-            <td><%= link_to '詳細', child_event_path(@child, event) %></td>
+            <td><%= link_to '詳細', child_event_path(@child, event), class: 'btn btn-primary' %></td>
           </tr>
         <% end %>
       <% else %>
