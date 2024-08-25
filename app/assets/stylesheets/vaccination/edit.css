@@ -1,0 +1,43 @@
+.vaccination-edit-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vaccination-title {
+  text-align: center;
+  color: #f9a825; 
+  font-family: 'Pacifico', cursive; /* 手書き風のフォント */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #f9a825; 
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.vaccination-form-group input,
+.vaccination-form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #f9a825; 
+  border-radius: 20px; /* 枠を丸くする */
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+}

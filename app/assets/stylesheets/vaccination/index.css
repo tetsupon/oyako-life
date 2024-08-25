@@ -1,0 +1,72 @@
+.vaccinations-container {
+  background-color: #fff; 
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.vaccinations-container h2 {
+  color: #f9a825; /* 黄色系の濃い色 */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.vaccinations-container .btn-primary {
+  background-color: #f9a825; /* 黄色系のボタン色 */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.vaccinations-container .btn-primary:hover {
+  background-color: #f57f17; /* ホバー時の濃い黄色 */
+}
+
+.vaccinations-container .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.vaccinations-container .table th,
+.vaccinations-container .table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+
+.vaccinations-container .table th {
+  background-color: #f9a825; /* テーブルヘッダーの背景色 */
+  color: white;
+}
+
+.vaccinations-container .table tr:nth-child(even) {
+  background-color: #fff59d; /* 偶数行の背景色 */
+}
+
+.vaccinations-container .table tr:hover {
+  background-color: #ffee58; /* ホバー時の行背景色 */
+}
+
+.vaccinations-container .btn-secondary {
+  background-color: #cccccc;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.vaccinations-container .btn-secondary:hover {
+  background-color: #dddddd;
+}

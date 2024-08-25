@@ -1,0 +1,17 @@
+<div class="vaccination-detail-container">
+  <h2 class="vaccination-title"><%= @child.nickname %>の予防接種詳細</h2>
+
+  <div class="vaccination-detail">
+    <p><strong>予防接種の名前:</strong> <%= @vaccination.vaccination_name %></p>
+    <p><strong>接種予定日:</strong> <%= @vaccination.scheduled_date.strftime('%Y年%m月%d日 %H:%M') %></p>
+    <p><strong>接種実施日:</strong> <%= @vaccination.administered_date.strftime('%Y年%m月%d日') %></p>
+    <p><strong>実施者:</strong> <%= @vaccination.administered_by.present? ? @vaccination.administered_by : '情報なし' %></p>
+    <p><strong>詳細説明:</strong> <%= @vaccination.description.present? ? @vaccination.description : 'なし' %></p>
+  </div>
+
+  <div class="action-buttons">
+    <%= link_to '編集', edit_child_vaccination_path(@child, @vaccination), class: 'btn btn-primary btn-edit' %>
+    <%= link_to '削除', child_vaccination_path(@child, @vaccination), method: :delete, data: {turbo_method: :delete}, class: 'btn btn-danger btn-delete' %>
+    <%= link_to '戻る', child_vaccinations_path(@child), class: 'btn btn-secondary' %>
+  </div>
+</div>

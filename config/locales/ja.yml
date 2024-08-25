@@ -5,6 +5,7 @@ ja:
       child: 子供
       growth: 成長記録
       event: 出来事
+      vaccination: 予防接種
     attributes:
       user:
         nickname: ニックネーム
@@ -36,6 +37,10 @@ ja:
         record_date: 出来事の日付
         description: 詳細説明
         image: 写真        
+      vaccination:
+        vaccination_name: "予防接種の名前"
+        scheduled_date: "接種予定日"
+        administered_date: "接種実施日"  
   errors:
     messages:
       blank: "を入力してください"
