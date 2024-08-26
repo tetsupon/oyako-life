@@ -62,6 +62,32 @@
   transform: translateY(0);
 }
 
+.event-form-actions {
+  text-align: center; /* ボタンを中央揃えにする */
+  margin-top: 20px; /* ボタンの上にスペースを追加 */
+}
+
+.event-form-actions .btn-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #ec407a; /* 黄色に統一 */
+  border: none;
+  color: white;
+  text-decoration: none;
+}
+
+.event-form-actions .btn-primary:hover {
+  background-color: #d81b60; /* ホバー時の濃い黄色 */
+  transform: translateY(-3px);
+}
+
+.event-form-actions .btn-primary:active {
+  background-color: #ec407a;
+  transform: translateY(0);
+}
+
+
 .events-container .btn-secondary {
   background-color: #cccccc;
   border: none;
