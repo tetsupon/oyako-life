@@ -13,18 +13,18 @@
   font-family: 'Pacifico', cursive; /* 手書き風のフォント */
 }
 
-.form-group {
+.vaccination-form-group {
   margin-bottom: 15px;
 }
 
-.form-group label {
+.vaccination-form-group label {
   display: block;
   font-weight: bold;
   color: #f9a825; 
   margin-bottom: 5px;
 }
 
-.form-control {
+.vaccination-form-control {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;

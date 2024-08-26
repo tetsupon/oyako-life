@@ -15,18 +15,18 @@
   font-family: 'Pacifico', cursive;
 }
 
-.form-group {
+.growth-form-group {
   margin-bottom: 20px;
 }
 
-.form-group label {
+.growth-form-group label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
   color: #1e88e5;
 }
 
-.form-group .form-control {
+.growth-form-group .form-control {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;

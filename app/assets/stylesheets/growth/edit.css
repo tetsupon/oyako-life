@@ -13,18 +13,18 @@
   font-family: 'Pacifico', cursive; /* 手書き風のフォント */
 }
 
-.form-group {
+.growth-form-group {
   margin-bottom: 15px;
 }
 
-.form-group label {
+.growth-form-group label {
   display: block;
   font-weight: bold;
   color: #1e88e5; 
   margin-bottom: 5px;
 }
 
-.form-control {
+.growth-form-control {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;

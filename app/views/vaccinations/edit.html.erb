@@ -4,27 +4,27 @@
   <%= form_with(model: [@child, @vaccination], local: true) do |f| %>
     <%= render 'shared/error_messages', model: f.object %>
 
-    <div class="form-group">
+    <div class="vaccination-form-group">
       <%= f.label :vaccination_name, "予防接種の名前" %>
       <%= f.text_field :vaccination_name, class: 'form-control' %>
     </div>
 
-    <div class="form-group">
+    <div class="vaccination-form-group">
       <%= f.label :scheduled_date, "接種予定日" %>
       <%= f.datetime_select :scheduled_date, class: 'form-control' %>
     </div>
 
-    <div class="form-group">
+    <div class="vaccination-form-group">
       <%= f.label :administered_date, "接種実施日" %>
       <%= f.date_select :administered_date, class: 'form-control' %>
     </div>
 
-    <div class="form-group">
+    <div class="vaccination-form-group">
       <%= f.label :administered_by, "実施者（医師名）" %>
       <%= f.text_field :administered_by, class: 'form-control' %>
     </div>
 
-    <div class="form-group">
+    <div class="vaccination-form-group">
       <%= f.label :description, "詳細説明" %>
       <%= f.text_area :description, class: 'form-control' %>
     </div>
