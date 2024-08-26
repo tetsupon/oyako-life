@@ -35,7 +35,7 @@
 .event-form-group select {
   width: 100%;
   padding: 8px;
-  border: 2px solid #ec407a; /* ピンクの枠線 */
+  border: 2px solid #ec407a; 
   border-radius: 20px; /* 枠を丸くする */
   box-sizing: border-box;
   font-size: 14px;
@@ -52,7 +52,7 @@
   font-size: 16px;
   font-weight: bold;
   color: #fff;
-  background-color: #ff69b4; /* ピンク色 */
+  background-color: #ff69b4; 
   border: none;
   border-radius: 25px; /* 丸みを帯びたボタン */
   text-decoration: none;
