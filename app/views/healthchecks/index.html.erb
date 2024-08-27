@@ -14,21 +14,21 @@
       </tr>
     </thead>
     <tbody>
-     <% if @vaccinations.present? %>
-      <% @healthchecks.each do |healthcheck| %>
-        <tr>
-          <td><%= healthcheck.checkup_name %></td>
-          <td><%= healthcheck.scheduled_date.strftime('%Y年%m月%d日 %H:%M') %></td>
-          <td><%= healthcheck.administered_date.strftime('%Y年%m月%d日') %></td>
-          <td><%= healthcheck.doctor_name %></td>
-          <td><%= link_to '詳細', child_healthcheck_path(@child, healthcheck), class: 'btn btn-primary' %></td>
-        </tr>
-      <% end %> 
-    <% else %>  
-        <tr>
-          <td colspan="6">健康診断記録がありません。</td>
-        </tr>       
-    <% end %>
+     <% if @healthchecks.present? %>
+       <% @healthchecks.each do |healthcheck| %>
+         <tr>
+           <td><%= healthcheck.checkup_name %></td>
+           <td><%= healthcheck.scheduled_date.strftime('%Y年%m月%d日 %H:%M') %></td>
+           <td><%= healthcheck.administered_date.strftime('%Y年%m月%d日') %></td>
+           <td><%= healthcheck.doctor_name %></td>
+           <td><%= link_to '詳細', child_healthcheck_path(@child, healthcheck), class: 'btn btn-primary' %></td>
+         </tr>
+       <% end %>
+     <% else %>
+       <tr>
+         <td colspan="6">健康診断記録がありません。</td>
+       </tr>
+     <% end %>
     </tbody>
   </table>
 
