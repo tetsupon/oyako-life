@@ -1,0 +1,72 @@
+.healthchecks-container {
+  background-color: #f0f8f5; /* 優しい緑系の背景色 */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* コンテナ内のテキストを中央揃えに */
+}
+
+.healthchecks-container h2 {
+  color: #66bb6a; /* 緑系の見出し色 */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.healthchecks-container .btn-primary {
+  background-color: #66bb6a; /* 緑系のボタン色 */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.healthchecks-container .btn-primary:hover {
+  background-color: #4caf50; /* ホバー時の緑系の色 */
+}
+
+.healthchecks-container .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.healthchecks-container .table th,
+.healthchecks-container .table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.healthchecks-container .table th {
+  background-color: #66bb6a; /* 緑系のヘッダー背景色 */
+  color: white;
+}
+
+.healthchecks-container .table tr:nth-child(even) {
+  background-color: #e8f5e9; /* 偶数行の緑系背景色 */
+}
+
+.healthchecks-container .table tr:hover {
+  background-color: #c8e6c9; /* ホバー時の行背景色 */
+}
+
+.healthchecks-container .btn-secondary {
+  background-color: #a5d6a7; /* 緑系のセカンダリボタン色 */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block; /* インラインブロックで中央揃えが有効に */
+  margin: 0 auto; /* 左右の余白を自動に */
+}
+
+.healthchecks-container .btn-secondary:hover {
+  background-color: #81c784; /* ホバー時の背景色 */
+}
+

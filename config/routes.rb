@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :growths, only: [:index, :new, :create, :edit, :show, :update, :destroy]
     resources :events
     resources :vaccinations
+    resources :healthchecks 
   end
   root to: "home#index"
     # 健康管理トップページ
