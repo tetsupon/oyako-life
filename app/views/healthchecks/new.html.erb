@@ -1,1 +1,38 @@
-<h1>テスト</h1>
+<div class="healthcheck-form-container">
+  <h2><%= @child.nickname %>の健康診断を追加</h2>
+
+  <%= form_with(model: [@child, @healthcheck], local: true) do |f| %>
+    <div class="healthcheck-form-group">
+      <%= f.label :checkup_name, "健康診断の名前" %>
+      <%= f.text_field :checkup_name, class: 'form-control' %>
+    </div>
+
+    <div class="healthcheck-form-group">
+      <%= f.label :scheduled_date, "健康診断予定日・時間" %>
+      <%= f.datetime_select :scheduled_date, class: 'form-control' %>
+    </div>
+
+    <div class="healthcheck-form-group">
+      <%= f.label :administered_date, "健康診断実施日" %>
+      <%= f.date_select :administered_date, class: 'form-control' %>
+    </div>
+
+    <div class="healthcheck-form-group">
+      <%= f.label :doctor_name, "担当医師名" %>
+      <%= f.text_field :doctor_name, class: 'form-control' %>
+    </div>
+
+    <div class="healthcheck-form-group">
+      <%= f.label :description, "健康診断の詳細説明" %>
+      <%= f.text_area :description, class: 'form-control' %>
+    </div>
+
+    <div class="healthcheck-form-actions">
+      <%= f.submit "健康診断を追加", class: 'btn btn-primary' %>
+    </div>
+
+    <div class="form-actions">
+      <%= link_to 'キャンセル', child_healthchecks_path(@child), class: 'btn btn-secondary' %>
+    </div>
+  <% end %>
+</div>
