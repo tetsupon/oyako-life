@@ -3,6 +3,7 @@ class Child < ApplicationRecord
   has_many :growths
   has_many :events
   has_many :vaccinations
+  has_many :healthchecks
 
 
   has_one_attached :image
