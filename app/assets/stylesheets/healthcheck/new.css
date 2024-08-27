@@ -1,0 +1,83 @@
+.new-healthcheck-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-healthcheck-container h2 {
+  text-align: center;
+  color: #66bb6a;
+  font-family: 'Pacifico', cursive;
+}
+
+.healthcheck-form-group {
+  margin-bottom: 20px;
+}
+
+.healthcheck-form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #66bb6a;
+}
+
+.healthcheck-form-group .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.healthcheck-form-actions {
+  text-align: center; /* ボタンを中央揃えにする */
+  margin-top: 20px; /* ボタンの上にスペースを追加 */
+}
+
+.healthcheck-form-actions .btn-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #66bb6a; /* 黄色に統一 */
+  border: none;
+  color: white;
+  text-decoration: none;
+}
+
+.healthcheck-form-actions .btn-primary:hover {
+  background-color: #4caf50; /* ホバー時の濃い黄色 */
+  transform: translateY(-3px);
+}
+
+.healthcheck-form-actions .btn-primary:active {
+  background-color: #66bb6a;
+  transform: translateY(0);
+}
+
+.actions .btn-secondary {
+  background-color: #cccccc;
+}
+
+.actions .btn-secondary:hover {
+  background-color: #dddddd;
+  transform: translateY(-3px);
+}
+
+.actions .btn-secondary:active {
+  background-color: #cccccc;
+  transform: translateY(0);
+}
+
+/* 枠組を丸くして色をつける */
+.healthcheck-form-group input,
+.healthcheck-form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #66bb6a; 
+  border-radius: 20px; /* 枠を丸くする */
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+}

@@ -1,4 +1,4 @@
-<div class="healthcheck-form-container">
+<div class="new-healthcheck-container">
   <h2><%= @child.nickname %>の健康診断を追加</h2>
 
   <%= form_with(model: [@child, @healthcheck], local: true) do |f| %>
@@ -30,9 +30,9 @@
     <div class="healthcheck-form-actions">
       <%= f.submit "健康診断を追加", class: 'btn btn-primary' %>
     </div>
+   <% end %>
 
-    <div class="form-actions">
-      <%= link_to 'キャンセル', child_healthchecks_path(@child), class: 'btn btn-secondary' %>
+    <div class="actions">
+      <%= link_to '戻る', child_healthchecks_path(@child), class: 'btn btn-secondary' %>
     </div>
-  <% end %>
 </div>

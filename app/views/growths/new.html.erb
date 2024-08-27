@@ -1,5 +1,5 @@
 <div class="new-growth-record-container">
-  <h2>新しい成長記録を追加</h2>
+  <h2><%= @child.nickname %>の新しい成長記録を追加</h2>
 
   <%= form_with(model: [@child, @growth], local: true) do |f| %>
     <%= render 'shared/error_messages', model: f.object %>
