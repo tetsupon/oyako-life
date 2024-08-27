@@ -5,6 +5,10 @@ class HealthchecksController < ApplicationController
     @healthchecks = @child.healthchecks.order(scheduled_date: :asc)
   end
 
+  def new
+    @healthcheck = @child.healthchecks.new
+  end
+
   private
 
   def set_child
