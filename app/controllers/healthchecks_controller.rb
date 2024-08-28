@@ -1,6 +1,6 @@
 class HealthchecksController < ApplicationController
   before_action :set_child
-  before_action :set_healthcheck, only: [:show]
+  before_action :set_healthcheck, only: [:show, :destroy]
 
 
   def index
@@ -21,6 +21,11 @@ class HealthchecksController < ApplicationController
   end
 
   def show
+  end
+
+  def destroy
+    @healthcheck.destroy
+    redirect_to child_healthchecks_path(@child)
   end
 
   private
