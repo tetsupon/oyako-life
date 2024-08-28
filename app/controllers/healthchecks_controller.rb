@@ -1,5 +1,7 @@
 class HealthchecksController < ApplicationController
   before_action :set_child
+  before_action :set_healthcheck, only: [:show]
+
 
   def index
     @healthchecks = @child.healthchecks.order(scheduled_date: :asc)
@@ -18,10 +20,17 @@ class HealthchecksController < ApplicationController
     end
   end
 
+  def show
+  end
+
   private
 
   def set_child
     @child = Child.find(params[:child_id])
+  end
+
+  def set_healthcheck
+    @healthcheck = @child.healthchecks.find(params[:id])
   end
 
   def healthcheck_params
