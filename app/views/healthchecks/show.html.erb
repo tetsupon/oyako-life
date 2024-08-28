@@ -1,1 +1,17 @@
-<h1>テスト</h1>
+<div class="healthcheck-detail-container">
+  <h2 class="healthcheck-title"><%= @child.nickname %>の健康診断記録詳細</h2>
+  
+  <div class="healthcheck-detail">
+    <p><strong>健康診断の名前:</strong> <%= @healthcheck.checkup_name %></p>
+    <p><strong>健康診断予定日:</strong> <%= @healthcheck.scheduled_date.strftime('%Y年%m月%d日 %H:%M') %></p>
+    <p><strong>健康診断実施日:</strong> <%= @healthcheck.administered_date.present? ? @healthcheck.administered_date.strftime('%Y年%m月%d日') : '未実施'  %></p>
+    <p><strong>担当医:</strong> <%= @healthcheck.doctor_name.present? ? @healthcheck.doctor_name : '情報なし' %></p>
+    <p><strong>詳細説明:</strong> <%= @healthcheck.description.present? ? @healthcheck.description : 'なし' %></p>
+  </div>
+
+  <div class="action-buttons">
+    <%= link_to '編集', edit_child_healthcheck_path(@child, @healthcheck), class: 'btn btn-primary' %>
+    <%= link_to '削除', child_healthcheck_path(@child, @healthcheck), method: :delete, data: { confirm: '本当に削除してもよろしいですか？' }, class: 'btn btn-danger btn-delete' %>
+    <%= link_to '戻る', child_healthchecks_path(@child), class: 'btn btn-secondary' %>
+  </div>
+</div>
