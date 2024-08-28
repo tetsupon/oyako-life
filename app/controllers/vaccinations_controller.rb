@@ -33,6 +33,12 @@ class VaccinationsController < ApplicationController
     end
   end
 
+  def destroy
+    @vaccination.destroy
+    redirect_to child_vaccinations_path(@child)
+  end
+
+
   private
 
   def set_child
