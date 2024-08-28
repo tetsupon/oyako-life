@@ -1,6 +1,6 @@
 class HealthchecksController < ApplicationController
   before_action :set_child
-  before_action :set_healthcheck, only: [:show, :destroy]
+  before_action :set_healthcheck, only: [:show, :edit, :update, :destroy]
 
 
   def index
@@ -22,6 +22,18 @@ class HealthchecksController < ApplicationController
 
   def show
   end
+
+  def edit
+  end
+
+  def update
+    if @healthcheck.update(healthcheck_params)
+      redirect_to child_healthcheck_path(@child, @healthcheck)
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
 
   def destroy
     @healthcheck.destroy
