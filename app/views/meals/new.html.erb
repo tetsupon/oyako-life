@@ -12,7 +12,7 @@
 
     <div class="meal-form-group">
       <%= f.label :meal_type_id, "食事の種類" %>
-      <%= f.text_field :meal_type_id, class: 'form-control' %>
+    <%= f.collection_select :meal_type_id, MealType.all, :id, :name, { prompt: "選択してください" }, { class: 'form-control' } %>
     </div>
 
     <div class="meal-form-group">
