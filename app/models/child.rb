@@ -4,6 +4,7 @@ class Child < ApplicationRecord
   has_many :events
   has_many :vaccinations
   has_many :healthchecks
+  has_many :meals
 
 
   has_one_attached :image
