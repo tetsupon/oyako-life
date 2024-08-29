@@ -1,1 +1,38 @@
-<h1>テスト</h1>
+<div class="meals-container">
+  <h2><%= @child.nickname %>の食事管理一覧</h2>
+
+  <%= link_to '食事を追加', new_child_meal_path(@child), class: 'btn btn-primary' %>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>食事の日時</th>
+        <th>食事の種類</th>
+        <th>食品名</th>
+        <th>摂取量</th>
+        <th>詳細</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% if @meals.present? %>
+        <% @meals.each do |meal| %>
+          <tr>
+            <td><%= meal.meal_date.strftime('%Y年%m月%d日 %H:%M') %></td>
+            <td><%= meal.meal_type_id %></td>
+            <td><%= meal.meal_name %></td>
+            <td><%= meal.quantity.present? ? "#{meal.quantity} g" : 'N/A' %></td>
+            <td><%= link_to '詳細', child_meal_path(@child, meal), class: 'btn btn-primary' %></td>
+          </tr>
+        <% end %>
+      <% else %>
+        <tr>
+          <td colspan="5">食事記録がありません。</td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <div class="actions">
+    <%= link_to '戻る', child_path(@child), class: 'btn btn-secondary' %>
+  </div>
+</div>
