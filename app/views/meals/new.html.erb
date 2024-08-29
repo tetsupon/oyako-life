@@ -1,8 +1,10 @@
-<div class="meals-container">
-  <h2>食事の追加</h2>
+<div class="new-meal-container">
+  <h2><%= @child.nickname %>の食事の追加</h2>
 
   <%= form_with(model: [@child, @meal], local: true) do |f| %>
+
   
+
     <div class="meal-form-group">
       <%= f.label :meal_date, "食事の日付・時間" %>
       <%= f.datetime_select :meal_date, {}, { class: 'form-control' } %>
