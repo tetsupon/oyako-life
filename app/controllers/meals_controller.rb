@@ -6,7 +6,7 @@ class MealsController < ApplicationController
   end
 
   def new
-    @vaccination = @child.vaccinations.new
+    @meal = @child.meals.new
   end
 
   private

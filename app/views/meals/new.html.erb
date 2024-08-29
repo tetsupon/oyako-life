@@ -1,1 +1,38 @@
-<h1>テスト</h1>
+<div class="meals-container">
+  <h2>食事の追加</h2>
+
+  <%= form_with(model: [@child, @meal], local: true) do |f| %>
+  
+    <div class="meal-form-group">
+      <%= f.label :meal_date, "食事の日付・時間" %>
+      <%= f.datetime_select :meal_date, {}, { class: 'form-control' } %>
+    </div>
+
+    <div class="meal-form-group">
+      <%= f.label :meal_type_id, "食事の種類" %>
+      <%= f.text_field :meal_type_id, class: 'form-control' %>
+    </div>
+
+    <div class="meal-form-group">
+      <%= f.label :meal_name, "食品名" %>
+      <%= f.text_field :meal_name, class: 'form-control' %>
+    </div>
+
+    <div class="meal-form-group">
+      <%= f.label :quantity, "摂取量" %>
+      <%= f.number_field :quantity, step: 0.01, class: 'form-control' %>
+    </div>
+
+    <div class="meal-form-group">
+      <%= f.label :description, "詳細説明" %>
+      <%= f.text_area :description, class: 'form-control' %>
+    </div>
+
+    <div class="meal-form-actions">
+      <%= f.submit "食事を追加", class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+    <div class="actions">
+      <%= link_to '戻る', child_meals_path(@child), class: "btn btn-secondary" %>
+    </div>
+</div>
