@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :events
     resources :vaccinations
     resources :healthchecks 
+    resources :meals
   end
   root to: "home#index"
     # 健康管理トップページ
