@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_08_26_041221) do
+ActiveRecord::Schema[7.0].define(version: 2024_08_29_060748) do
   create_table "active_storage_attachments", charset: "utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -87,6 +87,18 @@ ActiveRecord::Schema[7.0].define(version: 2024_08_26_041221) do
     t.index ["child_id"], name: "index_healthchecks_on_child_id"
   end
 
+  create_table "meals", charset: "utf8", force: :cascade do |t|
+    t.bigint "child_id", null: false
+    t.datetime "meal_date", null: false
+    t.string "meal_type_id", null: false
+    t.string "meal_name", null: false
+    t.float "quantity"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["child_id"], name: "index_meals_on_child_id"
+  end
+
   create_table "users", charset: "utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -124,5 +136,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_08_26_041221) do
   add_foreign_key "events", "children"
   add_foreign_key "growths", "children"
   add_foreign_key "healthchecks", "children"
+  add_foreign_key "meals", "children"
   add_foreign_key "vaccinations", "children"
 end
