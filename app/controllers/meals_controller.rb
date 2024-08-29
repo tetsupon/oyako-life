@@ -5,6 +5,10 @@ class MealsController < ApplicationController
     @meals = @child.meals.order(meal_date: :desc)
   end
 
+  def new
+    @vaccination = @child.vaccinations.new
+  end
+
   private
 
   def set_child
