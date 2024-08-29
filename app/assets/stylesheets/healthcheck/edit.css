@@ -1,0 +1,43 @@
+.healthcheck-edit-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.healthcheck-title {
+  text-align: center;
+  color: #66bb6a; 
+  font-family: 'Pacifico', cursive; /* 手書き風のフォント */
+}
+
+.healthcheck-form-group {
+  margin-bottom: 15px;
+}
+
+.healthcheck-form-group label {
+  display: block;
+  font-weight: bold;
+  color: #66bb6a; 
+  margin-bottom: 5px;
+}
+
+.healthcheck-form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.healthcheck-form-group input,
+.healthcheck-form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #66bb6a; 
+  border-radius: 20px; /* 枠を丸くする */
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+}
