@@ -2,6 +2,8 @@
   <h2 class="healthcheck-title"><%= @child.nickname %>の健康診断記録編集</h2>
 
   <%= form_with(model: [@child, @healthcheck], local: true) do |f| %>
+      <%= render 'shared/error_messages', model: f.object %>
+      
     <div class="healthcheck-form-group">
       <%= f.label :checkup_name, "健康診断の名前" %>
       <%= f.text_field :checkup_name, class: 'form-control' %>
