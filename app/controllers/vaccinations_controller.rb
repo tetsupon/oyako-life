@@ -29,7 +29,7 @@ class VaccinationsController < ApplicationController
     if @vaccination.update(vaccination_params)
       redirect_to child_vaccination_path(@child, @vaccination)
     else
-      render :edit, status: :unprocessable_entit
+      render :edit, status: :unprocessable_entity
     end
   end
 
