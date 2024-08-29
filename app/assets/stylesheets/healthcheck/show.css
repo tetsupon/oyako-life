@@ -1,5 +1,5 @@
 
-.vaccination-detail-container {
+.healthcheck-detail-container {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
@@ -8,27 +8,26 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.vaccination-title {
+.healthcheck-title {
   text-align: center;
-  color: #f9a825; 
+  color: #66bb6a; 
   font-family: 'Pacifico', cursive; /* 手書き風のフォント */
 }
 
-.vaccination-detail {
+.healthcheck-detail {
   margin-bottom: 20px;
 }
 
-.vaccination-detail p {
+.healthcheck-detail p {
   margin: 10px 0;
   font-size: 18px;
 }
 
-.vaccination-detail strong {
-  color: #f9a825; 
+.healthcheck-detail strong {
+  color: #66bb6a; 
 }
 
 .actions {
   text-align: center;
 }
-
 
