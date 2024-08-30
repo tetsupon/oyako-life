@@ -3,7 +3,8 @@ class MealType < ActiveHash::Base
     { id: 1, name: '朝食' },
     { id: 2, name: '昼食' },
     { id: 3, name: '夕食' },
-    { id: 4, name: 'おやつ' }
+    { id: 4, name: 'おやつ' },
+    { id: 5, name: 'その他' }    
   ]
 
   include ActiveHash::Associations
