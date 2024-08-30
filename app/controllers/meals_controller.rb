@@ -1,5 +1,7 @@
 class MealsController < ApplicationController
   before_action :set_child
+  before_action :set_meal, only: [:show, :edit, :update, :destroy]
+
 
   def index
     @meals = @child.meals.order(meal_date: :desc)
@@ -18,6 +20,10 @@ class MealsController < ApplicationController
     end
   end
 
+  def show
+  end
+
+
   private
 
   def set_child
@@ -27,4 +33,8 @@ class MealsController < ApplicationController
   def meal_params
     params.require(:meal).permit(:meal_date, :meal_type_id, :meal_name, :quantity, :description)
   end  
+
+  def set_meal
+    @meal = @child.meals.find(params[:id])
+  end
 end
