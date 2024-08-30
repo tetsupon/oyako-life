@@ -7,6 +7,7 @@ ja:
       event: 出来事
       vaccination: 予防接種
       healthcheck: 健康診断
+      meal: 食事記録
     attributes:
       user:
         nickname: ニックネーム
@@ -46,7 +47,13 @@ ja:
         checkup_name: "健康診断の名前"
         scheduled_date: "予定日"
         doctor_name: "担当医師"
-        description: "詳細"        
+        description: "詳細"  
+      meal:        
+        meal_date: "食事の日付・時間"
+        meal_type_id: "食事の種類"
+        meal_name: "食品名"
+        quantity: "摂取量"
+        description: "詳細説明"       
   errors:
     messages:
       blank: "を入力してください"
