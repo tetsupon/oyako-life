@@ -23,6 +23,17 @@ class MealsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def update
+    if @meal.update(meal_params)
+      redirect_to child_meal_path(@child, @meal)
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
 
   private
 
