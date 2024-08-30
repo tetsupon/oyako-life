@@ -1,1 +1,38 @@
-<h1>テスト</h1>
+<div class="meal-edit-container">
+  <h2 class="vaccination-title"><%= @child.nickname %>食事記録の編集</h2>
+
+  <%= form_with(model: [@child, @meal], local: true) do |f| %>
+    <div class="meal-form-group">
+      <%= f.label :meal_date, "食事の日付・時間" %>
+      <%= f.datetime_select :meal_date, {}, { class: 'form-control' } %>
+    </div>
+
+    <div class="meal-form-group">
+      <%= f.label :meal_type_id, "食事の種類" %>
+      <%= f.collection_select :meal_type_id, MealType.all, :id, :name, {}, { class: 'form-control' } %>
+    </div>
+
+    <div class="meal-form-group">
+      <%= f.label :meal_name, "食品名" %>
+      <%= f.text_field :meal_name, class: 'form-control' %>
+    </div>
+
+    <div class="meal-form-group">
+      <%= f.label :quantity, "摂取量 (g)" %>
+      <%= f.number_field :quantity, class: 'form-control' %>
+    </div>
+
+    <div class="meal-form-group">
+      <%= f.label :description, "詳細説明" %>
+      <%= f.text_area :description, class: 'form-control' %>
+    </div>
+
+    <div class="meal-form-actions">
+      <%= f.submit "更新", class: 'btn btn-primary' %>
+    </div>    
+
+    <div class="actions">
+      <%= link_to 'キャンセル', child_meal_path(@child, @meal), class: 'btn btn-secondary' %>
+    </div>
+  <% end %>
+</div>
