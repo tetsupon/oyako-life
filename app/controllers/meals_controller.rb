@@ -34,6 +34,10 @@ class MealsController < ApplicationController
     end
   end
 
+  def destroy
+    @meal.destroy
+    redirect_to child_meals_path(@child)
+  end
 
   private
 
