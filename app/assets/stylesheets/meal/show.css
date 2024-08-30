@@ -1,0 +1,31 @@
+.meal-detail-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meal-title {
+  text-align: center;
+  color: #f57c00; 
+  font-family: 'Pacifico', cursive; /* 手書き風のフォント */
+}
+
+.meal-detail {
+  margin-bottom: 20px;
+}
+
+.meal-detail p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.meal-detail strong {
+  color: #f57c00; 
+}
+
+.actions {
+  text-align: center;
+}
