@@ -4,13 +4,6 @@
   
   <%= form_with model: @user, url: user_session_path, class: 'registration-main', local: true do |f| %>
 
-    <% if flash[:notice].present? %>
-      <div class="flash-notice"><%= flash[:notice] %></div>
-    <% end %>
-    <% if flash[:alert].present? %>
-      <div class="flash-alert"><%= flash[:alert] %></div>
-    <% end %>
-
     <div class="field">
       <%= f.label :email %><br>
       <%= f.email_field :email, id:"email", placeholder:"登録したメールアドレスを入力して下さい", autofocus: true %>

@@ -19,7 +19,7 @@ class UsersController < ApplicationController
     @user = current_user
     if @user.update_with_password(user_params)
       bypass_sign_in(@user)
-      redirect_to root_path(@user), notice: 'アカウント情報を更新しました。'
+      redirect_to root_path(@user)
     else
       render :edit, status: :unprocessable_entity
     end
