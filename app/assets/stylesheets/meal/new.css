@@ -47,7 +47,7 @@
 }
 
 .meal-form-actions .btn-primary:hover {
-  background-color: #ef6c00; 
+  background-color: #ef6c00; /* ホバー時の濃い黄色 */
   transform: translateY(-3px);
 }
 
