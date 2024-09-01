@@ -24,13 +24,6 @@
   color: #f57c00;
 }
 
-.meal-form-group .form-control {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
 .meal-form-actions {
   text-align: center; /* ボタンを中央揃えにする */
   margin-top: 20px; /* ボタンの上にスペースを追加 */
