@@ -1,5 +1,5 @@
 class HealthrecordsController < ApplicationController
-  def top
+  def index
     @child = Child.find(params[:id])
   end
 end
