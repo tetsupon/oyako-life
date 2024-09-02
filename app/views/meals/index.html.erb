@@ -18,7 +18,7 @@
         <% @meals.each do |meal| %>
           <tr>
             <td><%= meal.meal_date.strftime('%Y年%m月%d日 %H:%M') %></td>
-            <td><%= meal.meal_type_id %></td>
+            <td><%= meal.meal_type.present? ? meal.meal_type.name : '未設定' %></td>
             <td><%= meal.meal_name %></td>
             <td><%= meal.quantity.present? ? "#{meal.quantity} g" : 'N/A' %></td>
             <td><%= link_to '詳細', child_meal_path(@child, meal), class: 'btn btn-primary' %></td>
