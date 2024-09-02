@@ -1,0 +1,45 @@
+
+/* 成長記録機能のスタイル */
+.growth-form-group input:focus,
+.growth-form-group textarea:focus,
+.growth-form-group select:focus {
+  outline: none;
+  border: 2px solid #2980b9; /* ブルー系 */
+  box-shadow: 0 0 5px #2980b9;
+}
+
+/* 出来事記録機能のスタイル */
+.healthcheck-form-group input:focus,
+.healthcheck-form-group textarea:focus,
+.healthcheck-form-group select:focus {
+  outline: none;
+  border: 2px solid #e74c3c; /* ブルー系 */
+  box-shadow: 0 0 5px #e74c3c;
+}
+
+/* 予防接種機能のスタイル */
+.vaccination-form-group input:focus,
+.vaccination-form-group textarea:focus,
+.vaccination-form-group select:focus {
+  outline: none;
+  border: 2px solid #f1c40f; /* グリーン系 */
+  box-shadow: 0 0 5px #f1c40f;
+}
+
+/* 健康診断記録機能のスタイル */
+.healthcheck-form-group input:focus,
+.healthcheck-form-group textarea:focus,
+.healthcheck-form-group select:focus {
+  outline: none;
+  border: 2px solid #27ae60; /* パープル系 */
+  box-shadow: 0 0 5px #27ae60;
+}
+
+/* 食事記録機能のスタイル */
+.meal-form-group input:focus,
+.meal-form-group textarea:focus,
+.meal-form-group select:focus {
+  outline: none;
+  border: 2px solid #e67e22; /* パープル系 */
+  box-shadow: 0 0 5px #e67e22;
+}
