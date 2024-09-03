@@ -9,6 +9,15 @@
 }
 
 /* 出来事記録機能のスタイル */
+.event-form-group input:focus,
+.event-form-group textarea:focus,
+.event-form-group select:focus {
+  outline: none;
+  border: 2px solid #e74c3c; /* 赤系 */
+  box-shadow: 0 0 5px #e74c3c;
+}
+
+/* 出来事記録機能のスタイル */
 .healthcheck-form-group input:focus,
 .healthcheck-form-group textarea:focus,
 .healthcheck-form-group select:focus {
