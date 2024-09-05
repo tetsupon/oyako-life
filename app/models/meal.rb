@@ -7,7 +7,7 @@ class Meal < ApplicationRecord
 
   with_options presence: true do
     validates :meal_date
-    validates :meal_type_id
+    validates :meal_type_id, numericality: { other_than: 0, message: 'は0以外の値にしてください' }
     validates :meal_name
   end
 end
