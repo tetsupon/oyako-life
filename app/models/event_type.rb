@@ -1,5 +1,6 @@
 class EventType < ActiveHash::Base
   self.data = [
+    { id: 0, name: '--' },
     { id: 1, name: '誕生日' },
     { id: 2, name: '入学式' },
     { id: 3, name: '卒業式' },
