@@ -20,10 +20,16 @@ RSpec.describe Growth, type: :model do
         expect(@growth.errors.full_messages).to include("記録日を入力してください")
       end
 
-      it '成長タイプが選択されていなければ保存できない' do
+      it '成長の種類が選択されていなければ保存できない' do
         @growth.growth_type_id = ''
         @growth.valid?
         expect(@growth.errors.full_messages).to include("成長の種類を入力してください")
+      end
+
+      it '成長の種類IDが0だと保存できない' do
+        @growth.growth_type_id = 0
+        @growth.valid?
+        expect(@growth.errors.full_messages).to include('成長の種類は0以外の値にしてください')
       end
 
       it '身長が空では保存できない' do
