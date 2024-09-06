@@ -30,6 +30,12 @@ RSpec.describe Event, type: :model do
         expect(@event.errors.full_messages).to include('出来事の種類を入力してください')
       end
 
+      it '出来事の種類IDが0だと保存できない' do
+        @event.event_type_id = 0
+        @event.valid?
+        expect(@event.errors.full_messages).to include('出来事の種類は0以外の値にしてください')
+      end
+
       it '詳細説明が空だと保存できない' do
         @event.description = ''
         @event.valid?
