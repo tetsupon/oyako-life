@@ -31,35 +31,89 @@
   - 親子Lifeのトップページでは、アプリの主要な機能を一覧表示します。親はここから成長記録やイベント、予防接種などの各管理ページにアクセスできます。
 [![Image from Gyazo](https://i.gyazo.com/8b06c851c130f7dfc985e17e9e9880a2.gif)](https://gyazo.com/8b06c851c130f7dfc985e17e9e9880a2)
 
-  - ユーザーはここからアカウントにログインします。登録済みのIDとパスワードを入力することで、各種管理機能にアクセス可能です。
+  - 新規登録
 [![Image from Gyazo](https://i.gyazo.com/a5c250df5cb218ca27703fd555d27b4a.gif)](https://gyazo.com/a5c250df5cb218ca27703fd555d27b4a)
+ユーザーはここから必要事項を入力後、新規登録してログインします。登録済みのIDとパスワードを入力することで、各種管理機能にアクセス可能です。
 
- 
+  - ログイン機能
+ [![Image from Gyazo](https://i.gyazo.com/d6640b4f5aea90fec602c9091b5730e0.gif)](https://gyazo.com/d6640b4f5aea90fec602c9091b5730e0)
+ ユーザーはここからアカウントにログインします。登録済みのIDとパスワードを入力することで、各種管理機能にアクセス可能です。
 
+- **子供一覧ページ**
+  - 子供一覧ページ
+[![Image from Gyazo](https://i.gyazo.com/1692140fcfa6c10e6ecca943f56aea3c.png)](https://gyazo.com/1692140fcfa6c10e6ecca943f56aea3c)  登録した子供の一覧を表示することが可能です。親はここから子供を選択し、子供の詳細ページから各管理ページにアクセスすることができます。
 
+  - 子供追加ページ
+[![Image from Gyazo](https://i.gyazo.com/41a3f7dc0295894c416c48f9f108c563.png)](https://gyazo.com/41a3f7dc0295894c416c48f9f108c563)
 
-
+  - 子供詳細ページ
+[![Image from Gyazo](https://i.gyazo.com/4735a1ce1c53c3a483b6a2d9b8feff3c.gif)](https://gyazo.com/4735a1ce1c53c3a483b6a2d9b8feff3c)
+  登録した子供の情報を確認することが可能で、編集・削除もできます。親はここから各管理ページにアクセスすることができます。
 
 - **成長記録機能**
-  - 子供の身長や体重を記録・グラフ化して表示。
-  - ![成長記録機能](画像URL)
-  [![Image from Gyazo](https://i.gyazo.com/47b635d102243dd5f92729fe2ccf8411.gif)](https://gyazo.com/47b635d102243dd5f92729fe2ccf8411)
+  - 成長記録の一覧。
+[![Image from Gyazo](https://i.gyazo.com/ec1e3bb49ee710b5fab32b783066919d.png)](https://gyazo.com/ec1e3bb49ee710b5fab32b783066919d)
+  説明
 
-- **イベント管理機能**
-  - 子供の重要なイベントや出来事を記録。
-  - ![イベント管理機能](画像URL)
+  - 成長記録の追加。
+[![Image from Gyazo](https://i.gyazo.com/a517a574f51b17964874cfd7ce2a070a.png)](https://gyazo.com/a517a574f51b17964874cfd7ce2a070a) 
+  説明
 
-- **予防接種管理機能**
-  - 予防接種のスケジュールを管理。
-  - ![予防接種管理機能](画像URL)
+  - 成長記録の詳細。
+[![Image from Gyazo](https://i.gyazo.com/ef979ceaba63a808328252dbef3eab26.png)](https://gyazo.com/ef979ceaba63a808328252dbef3eab26) 
+  説明 
 
-- **健康診断管理機能**
-  - 健康診断の結果を記録・管理。
-  - ![健康診断管理機能](画像URL)
+- **出来事記録機能**
+  - 出来事記録の一覧。
+[![Image from Gyazo](https://i.gyazo.com/1d9c31d4df06276a240f46577f309824.png)](https://gyazo.com/1d9c31d4df06276a240f46577f309824)
+  説明
 
-- **食事管理機能**
-  - 子供の食事内容を記録し、栄養管理をサポート。
-  - ![食事管理機能](画像URL)
+  - 出来事記録の追加。
+[![Image from Gyazo](https://i.gyazo.com/c2588a009db4f16be7958ebe0598a1b5.png)](https://gyazo.com/c2588a009db4f16be7958ebe0598a1b5)  
+  説明
+
+  - 出来事記録の詳細。
+ [![Image from Gyazo](https://i.gyazo.com/1f72459b8c5a94fbb7b05472f8cd2c5c.png)](https://gyazo.com/1f72459b8c5a94fbb7b05472f8cd2c5c) 
+  説明 
+
+- **予防接種記録機能**
+  - 予防接種記録の一覧。
+[![Image from Gyazo](https://i.gyazo.com/b85a9e08aa62b1372bf2f61ce2889fd0.png)](https://gyazo.com/b85a9e08aa62b1372bf2f61ce2889fd0)
+  説明
+
+  - 予防接種記録の追加。
+ [![Image from Gyazo](https://i.gyazo.com/04f1077042a56043fbb8e1c7c3d90ef1.gif)](https://gyazo.com/04f1077042a56043fbb8e1c7c3d90ef1) 
+  説明
+
+  - 予防接種記録の詳細。
+ [![Image from Gyazo](https://i.gyazo.com/822cc528ccf20570f241556f700487e6.png)](https://gyazo.com/822cc528ccf20570f241556f700487e6) 
+  説明 
+
+- **健康診断記録機能**
+  - 健康診断記録の一覧。
+ [![Image from Gyazo](https://i.gyazo.com/a607703369cf524169a4f73b9f4c8c0d.png)](https://gyazo.com/a607703369cf524169a4f73b9f4c8c0d) 
+  説明
+
+  - 健康診断記録の追加。
+ [![Image from Gyazo](https://i.gyazo.com/8be481b9bd27f5f8974459a6c6b19f13.gif)](https://gyazo.com/8be481b9bd27f5f8974459a6c6b19f13) 
+  説明
+
+  - 健康診断記録の詳細。
+ [![Image from Gyazo](https://i.gyazo.com/859a2f44adeb42b9bce820981e2a31b7.png)](https://gyazo.com/859a2f44adeb42b9bce820981e2a31b7) 
+  説明 
+
+- **食事記録機能**
+  - 食事記録の一覧。
+ [![Image from Gyazo](https://i.gyazo.com/a20fb6cba3a3735bc0a9598e50999164.png)](https://gyazo.com/a20fb6cba3a3735bc0a9598e50999164) 
+  説明
+
+  - 食事記録の追加。
+ [![Image from Gyazo](https://i.gyazo.com/ed01ed11bbdcfe024f60f0eeffb534ef.png)](https://gyazo.com/ed01ed11bbdcfe024f60f0eeffb534ef) 
+  説明
+
+  - 食事記録の詳細。
+[![Image from Gyazo](https://i.gyazo.com/30fd936f73169c2c850ad6732e854563.png)](https://gyazo.com/30fd936f73169c2c850ad6732e854563)  
+  説明 
 
 ## 実装予定の機能
 - **AIを活用した育児アドバイス機能**
