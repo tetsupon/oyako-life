@@ -130,7 +130,7 @@
 
 - **言語**: Ruby 3.2.0
 - **フレームワーク**: Ruby on Rails7.0.0
-- **データベース**: PostgreSQL
+- **データベース**: MySQL
 - **フロントエンド**: HTML, CSS, JavaScript
 - **認証**: Devise
 - **テスト**: RSpec
