@@ -4,7 +4,7 @@ class HealthchecksController < ApplicationController
 
 
   def index
-    @healthchecks = @child.healthchecks.order(scheduled_date: :asc)
+    @healthchecks = @child.healthchecks.order("administered_date DESC")
   end
 
   def new

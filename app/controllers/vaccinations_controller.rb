@@ -3,7 +3,7 @@ class VaccinationsController < ApplicationController
   before_action :set_vaccination, only: [:show, :edit, :update, :destroy]
 
   def index
-    @vaccinations = @child.vaccinations.order(scheduled_date: :asc)
+    @vaccinations = @child.vaccinations.order("administered_date DESC")
   end
 
   def new

@@ -4,7 +4,7 @@ class EventsController < ApplicationController
 
 
   def index
-    @events = @child.events.order("created_at DESC")
+    @events = @child.events.order("record_date DESC")
   end
 
   def new

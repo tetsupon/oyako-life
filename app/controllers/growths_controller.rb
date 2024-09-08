@@ -4,7 +4,7 @@ class GrowthsController < ApplicationController
   before_action :set_growth, only: [:show, :edit, :update, :destroy]
 
   def index
-    @growths = @child.growths.order(record_date: :desc)
+    @growths = @child.growths.order("record_date DESC")
   end
 
   def new

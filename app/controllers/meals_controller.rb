@@ -4,7 +4,7 @@ class MealsController < ApplicationController
 
 
   def index
-    @meals = @child.meals.order(meal_date: :desc)
+    @meals = @child.meals.order("meal_date DESC")
   end
 
   def new
