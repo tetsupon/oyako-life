@@ -120,13 +120,12 @@
 - **他の保護者との情報共有機能**
 - **通知機能**（予防接種や健康診断のリマインダー）
 
-## データベース設計
-- ![ER図を添付](ER図の画像URL)
+## ER図
+[![Image from Gyazo](https://i.gyazo.com/99d18f0eb8351b1a4123ce8896a60806.png)](https://gyazo.com/99d18f0eb8351b1a4123ce8896a60806)
 
 ## 画面遷移図
-- ![画面遷移図を添付](画面遷移図の画像URL)
+[![Image from Gyazo](https://i.gyazo.com/0a8a62784abac8e78f160b8b7c8e0a9d.png)](https://gyazo.com/0a8a62784abac8e78f160b8b7c8e0a9d)
 
-## 開発環境
 - **言語**: Ruby 3.2.0
 - **フレームワーク**: Ruby on Rails7.0.0
 - **データベース**: PostgreSQL
@@ -135,10 +134,6 @@
 - **テスト**: RSpec
 - **デプロイ**: Render
 
-## ローカルでの動作方法
-1. リポジトリをクローンします。
-   ```bash
-   git clone https://github.com/your_username/oyako-life.git
 
 
 ### 1. ユーザー管理機能
